@@ -15,33 +15,8 @@
 		"tall_lodef"	"38"
 		"visible"		"0"
 		"enabled"		"0"
-		"image"			"../hud/objectives_timepanel_blue_bg"	
-		"scaleImage"		"1"	
 	}
-	"background1"
-	{
-		"ControlName"			"CTFImagePanel"
-		"fieldName"				"background1"
-		"xpos"					"25"
-		"ypos"					"34"
-		"zpos"					"1"
-		"wide"					"40"
-		"tall"	 				"5"
-		"autoResize"			"0"
-		"pinCorner"				"0"
-		"visible" 				"1" 
-		"enabled" 				"1"
-		"image"					"../hud/color_panel_brown"
-		"scaleImage"			"1"
-		"teambg_1"				"../hud/color_panel_brown"
-		"teambg_2"				"../hud/color_panel_red"
-		"teambg_3"				"../hud/color_panel_blu"
-		
-		"src_corner_height"		"40"				// pixels inside the image
-		"src_corner_width"		"40"			
-		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"0"	
-	}
+
 	"TimePanelProgressBar"
 	{
 		"ControlName"			"CTFProgressBar"
@@ -58,12 +33,30 @@
 		"visible"			"0"
 		"visible_minmode"	"0"
 		"enabled"			"0"
-		"scaleImage"			"1"
-		"image"				"../hud/objectives_timepanel_progressbar"
-		"color_active"			"TimerProgress.Active"
-		"color_inactive"		"TimerProgress.InActive"
-		"color_warning"			"TimerProgress.Warning"
-		"percent_warning"		"0.75"
+	}
+	"TimePanelBG"
+	{
+		"ControlName"		"CTFImagePanel"
+		"fieldName"		"TimePanelBG"
+		"xpos"			"25"
+		"ypos"			"10"
+		"zpos"			"1"
+		"wide"			"40"
+		"tall"	 		"5"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible" "1" 
+		"enabled" "1"
+		"image"			"../hud/color_panel_brown"
+		"scaleImage"		"1"
+		"teambg_1"		"../hud/color_panel_brown"
+		"teambg_2"		"../hud/color_panel_red"
+		"teambg_3"		"../hud/color_panel_blu"
+		
+		"src_corner_height"		"40"				// pixels inside the image
+		"src_corner_width"		"40"			
+		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
+		"draw_corner_height" 		"0"	
 	}
 	"WaitingForPlayersLabel"
 	{
@@ -199,9 +192,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"SetupLabel"
-		"xpos"			"0"
-		"xpos_hidef"	"0"
-		"xpos_lodef"	"0"
+		"xpos"			"4"
 		"ypos"			"35"
 		"zpos"			"5"
 		"wide"			"78"

@@ -18,7 +18,7 @@
 		"HealthDeathWarning"	"0.49"
 		"HealthDeathWarningColor"	"HUDDeathWarning"
 	}
-	
+
 	TeamHealthBorder
 	{
 
@@ -145,7 +145,7 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusHealthBonusImage"
-		"xpos"			"108"	[$WIN32]
+		"xpos"			"110"	[$WIN32]
 		"xpos"			"83"	[$X360]
 		"ypos"			"50"	[$WIN32]
 		"ypos"			"43"	[$X360]

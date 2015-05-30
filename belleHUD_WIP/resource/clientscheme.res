@@ -19,6 +19,17 @@ Scheme
 	Colors
 	{
 		// base colors
+		"HUDGrey"			"37 37 37 150"
+		"HUDBlue"			"20 124 242 255"
+		"HUDRed"			"255 37 37 255"
+		"HUDBlueTeam"		"104 124 155 127"
+		"HUDRedTeam"		"180 92 77 127"
+		"HUDSpectator"		"255 255 255 127"
+		"HUDBlueTeamSolid"	"104 124 155 255"
+		"HUDRedTeamSolid"	"180 92 77 255"
+		"HUDDeathWarning"	"255 0 0 255"
+		"HudWhite"			"255 255 255 255"
+		"HudOffWhite"		"255 255 255 255"
 		"Orange"			"178 82 22 255"
 		"OrangeDim"			"178 82 22 120"
 		"LightOrange"		"188 112 0 128"
@@ -40,14 +51,7 @@ Scheme
 		"TransparentLightBlack"	"0 0 0 90"
 		"FooterBGBlack"		"52 48 55 255"
 		
-		"HUDBlueTeam"		"104 124 155 127"
-		"HUDRedTeam"		"180 92 77 127"
-		"HUDSpectator"		"124 124 124 127"
-		"HUDBlueTeamSolid"	"104 124 155 255"
-		"HUDRedTeamSolid"	"180 92 77 255"
-		"HUDDeathWarning"	"255 0 0 255"
-		"HudWhite"			"255 255 255 255"
-		"HudOffWhite"		"200 187 161 255"
+		
 		"HudBlack"			"65 65 65 255"
 		"ProgressBarBlue"	"91 122 142 255"
 		
@@ -2955,9 +2959,9 @@ Scheme
 			"1"
 			{
 				"name"			"Liberation Serif"
-				"tall"			"28"
-				"tall_lodef"	"48"
-				"tall_hidef"	"48"
+				"tall"			"20"
+				"tall_lodef"	"24"
+				"tall_hidef"	"24"
 				"antialias"		"1" 
 				"custom"		"1" [$OSX]
 				"weight"		"500"
@@ -2970,9 +2974,9 @@ Scheme
 			"1"
 			{
 				"name"			"Liberation Serif"
-				"tall"			"40"
-				"tall_lodef"	"48"
-				"tall_hidef"	"48"
+				"tall"			"24"
+				"tall_lodef"	"24"
+				"tall_hidef"	"24"
 				"antialias"		"1"
 				"custom"		"1" [$OSX]
 				"weight"		"500"
@@ -2985,7 +2989,7 @@ Scheme
 			"1"
 			{
 				"name"   "Liberation Serif"
-				"tall"		"24"
+				"tall"		"18"
 				"tall_lodef"	"36"
 				"tall_hidef"	"36"
 				"antialias" "1"
@@ -2998,8 +3002,8 @@ Scheme
 			"1"
 			{
 				"name"			"Liberation Serif"
-				"tall"			"20" [!$OSX]
-				"tall"			"20" [$OSX]
+				"tall"			"16" [!$OSX]
+				"tall"			"16" [$OSX]
 				"tall_lodef"	"32"
 				"tall_hidef"	"32"
 				"antialias"		"1"

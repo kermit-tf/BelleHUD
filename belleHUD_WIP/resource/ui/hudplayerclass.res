@@ -7,7 +7,6 @@
 		"fieldName"		"HudPlayerClass"
 		"xpos"			"-20"
 		"ypos"			"150"
-		"ypos_minmode"	"150"
 		"zpos"			"10"
 		"wide"			"f0"
 		"tall"			"480"
@@ -28,10 +27,10 @@
 		"fg_image"		"replay/thumbnails/triangle"
 		"bg_image"		"replay/thumbnails/triangle"
 		"fgcolor_override"	"0 0 0 255"
-		"bgcolor_override"	"CBUberFull"
+		"bgcolor_override"	"255 255 255 255"
 		"scaleImage"		"1"
 	}		
-	
+
 	"PlayerStatusClassImage"
 	{
 		"ControlName"	"CTFClassImage"
@@ -289,13 +288,11 @@
 			{
 				"fov"			"20"
 				"angles_x"		"-5"
-				"angles_x_minmode"	"3"
-				"angles_y"		"178"
+				"angles_y"		"228"
 				"angles_z"		"0"
 				"origin_x"		"150"
 				"origin_y"		"-5"
 				"origin_z"		"-96"
-				"origin_z_minmode"	"-60"
 			}
 			"Heavy"
 			{

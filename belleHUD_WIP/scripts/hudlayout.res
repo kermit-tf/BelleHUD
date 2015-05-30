@@ -1,6 +1,25 @@
 "Resource/HudLayout.res"
 {
-	
+		xHair
+    {
+        "controlName" "CExLabel"
+        "fieldName" "xHair"
+        "visible" "0"
+		"visible_minmode" "1"
+        "enabled" "1"
+        "zpos" "2"
+
+        "xpos" "c-16"
+        "ypos" "c-20"
+        "wide" "32"
+        "tall" "43"
+
+        "font" "crosshairsoutline16"
+        "labelText" "a"
+        "textAlignment" "center"
+
+        "fgcolor" "255 255 255 255"
+    }
 	HudPlayerStatus
 	{
 		"fieldName" "HudPlayerStatus"
@@ -1136,9 +1155,7 @@
 		"visible"				"1"
 		"enabled"				"1"
 		"xpos"					"c-160"
-		"ypos"					"5"
-		"ypos_minmode"				"15"
-		"ypos_lodef"				"75"
+		"ypos"					"-7"
 		"wide"					"125"
 		"tall"					"55"
 	}

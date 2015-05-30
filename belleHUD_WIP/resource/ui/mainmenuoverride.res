@@ -42,7 +42,7 @@
 				"tabPosition"	"0"
 				"textinsetx"	"25"
 				"use_proportional_insets" "1"
-				"font"			"HudFontSmallBold"
+				"font"			"HudFontMediumBold"
 				"textAlignment"	"west"
 				"dulltext"		"0"
 				"brighttext"	"0"
@@ -50,16 +50,16 @@
 				"sound_depressed"	"UI/buttonclick.wav"
 				"sound_released"	"UI/buttonclickrelease.wav"
 				
-				"border_default"	"MainMenuButtonDefault"
-				"border_armed"		"MainMenuButtonArmed"
+				"border_default"	""
+				"border_armed"		""
 				"paintbackground"	"0"
 				
-				"defaultFgColor_override" "46 43 42 255"
-				"armedFgColor_override" "235 226 202 255"
-				"depressedFgColor_override" "46 43 42 255"
+				"defaultFgColor_override" "255 255 255 255"
+				"armedFgColor_override" "HUDBlue"
+				"depressedFgColor_override" "255 255 255 255"
 				
 				"image_drawcolor"	"117 107 94 255"
-				"image_armedcolor"	"235 226 202 255"
+				"image_armedcolor"	"HUDRed"
 				"SubImage"
 				{
 					"ControlName"	"ImagePanel"
@@ -75,6 +75,464 @@
 				}				
 			}		
 		}
+			alias homeserver "connect ***; password ***"
+			alias 5cpcfg "rcon_password ***; rcon exec etf2l_6v6_5cp.cfg"
+			alias kothcfg "rcon_password ***; rcon exec etf2l_6v6_koth.cfg"
+			alias goldencfg "rcon_password ***; rcon exec etf2l_golden_cap.cfg"
+			alias gc "rcon_password ***; rcon exec etf2l_golden_cap.cfg"                            //There is no Golden cap button on panel, but you still can use "gc" in console
+			alias badlands "rcon_password ***; rcon changelevel cp_badlands; rcon changelevel cp_badlands"
+			alias gullywash "rcon_password ***; rcon changelevel cp_gullywash_final1; rcon changelevel cp_gullywash_final1"
+			alias granary "rcon_password ***; rcon changelevel cp_granary; rcon changelevel cp_granary"
+			alias process "rcon_password ***; rcon changelevel cp_process_final; rcon changelevel cp_process_final"
+			alias snakewater "rcon_password ***; rcon changelevel cp_snakewater_final1; rcon changelevel cp_snakewater_final1"
+			alias logjam "rcon_password ***; rcon changelevel cp_logjam_b10; rcon changelevel cp_logjam_b10"
+			alias viaduct "rcon_password ***; rcon changelevel koth_pro_viaduct_rc4; rcon changelevel koth_pro_viaduct_rc4"
+			
+            "ServerControlBGPanel"
+            {
+                "ControlName" "ImagePanel"
+				"fieldName" "Background"
+                "xpos"                  "c-15"          //-290
+                "ypos"                  "136"           //299
+                "zpos"                  "-1"
+                "wide" "260"
+				"tall" "230"
+				"autoResize" "0"
+				"pinCorner" "0"
+				"visible" "1"
+				"enabled" "1"
+				"fillcolor" "0 0 0 240"
+            }
+            "ServerControlLabel"
+            {
+                    "ControlName"   "CExLabel"
+                    "fieldName"             "ServerControlLabel"
+                    "font"                  "HudFontMediumSmallBold"
+                    "labelText"             "Server control panel"
+                    "textAlignment" "west"
+                    "xpos"                  "c-3"           //-278
+                    "ypos"                  "137"           //298
+                    "wide"                  "240"
+                    "tall"                  "30"
+                    "autoResize"    "0"
+                    "pinCorner"             "0"
+                    "visible"               "1"
+                    "enabled"               "1"
+                    "fgcolor_override"      "HUDWhite"
+            }
+	"BreakPoint"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"		"VerticalLine"
+		"xpos"			"c-3"
+		"ypos"			"167"
+		"zpos"			"2"
+		"wide"			"235"
+		"tall"			"1"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"fillcolor"		"255 255 255 255"
+		"alpha" "75"
+	}
+     
+            "ConnectButton"
+            {
+                    "ControlName"   "CExImageButton"
+                    "fieldName"             "ConnectButton"
+                    "xpos"                  "c-10"          //c115
+                    "ypos"                  "165"
+                    "wide"                  "250"           //125
+                    "tall"                  "26"
+                    "autoResize"    "0"
+                    "pinCorner"             "3"
+                    "visible"               "1"
+                    "enabled"               "1"
+                    "tabPosition"   "0"
+                    "font"                  "HudFontMediumSmallBold"
+                    "labelText"             "Connect"
+                    "textAlignment" "center"
+                    "dulltext"              "0"
+                    "brighttext"    "0"
+                    "default"               "1"
+                    "sound_depressed"       "UI/buttonclick.wav"
+                    "sound_released"        "UI/buttonclickrelease.wav"
+                    "command"               "engine homeserver"
+                   
+                    "border_default"	""
+					"border_armed"		""
+					"paintbackground"	"0"
+                   
+                    "defaultFgColor_override" "HUDWhite"
+                    "armedFgColor_override" "HUDBlue"
+                    "depressedFgColor_override" "HUDWhite"
+            }
+           
+            "ConfigLabel"
+            {
+                    "ControlName"   "CExLabel"
+                    "fieldName"             "ConfigLabel"
+                    "font"                  "HudFontMediumSmallBold"
+                    "labelText"             "rcon exec"
+                    "textAlignment" "west"
+                    "xpos"                  "c-3"           //-278
+                    "ypos"                  "191"           //+26
+                    "wide"                  "240"
+                    "tall"                  "30"
+                    "autoResize"    "0"
+                    "pinCorner"             "0"
+                    "visible"               "1"
+                    "enabled"               "1"
+                    "fgcolor_override"      "HUDWhite"               //"235 227 203 255"
+            }
+			"BreakPoint2"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"		"VerticalLine"
+		"xpos"			"c-3"
+		"ypos"			"191"
+		"zpos"			"2"
+		"wide"			"235"
+		"tall"			"1"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"fillcolor"		"255 255 255 255"
+		"alpha" "75"
+	}
+            "Config1Button"
+            {
+                    "ControlName"   "CExImageButton"
+                    "fieldName"             "Config1Button"
+                    "xpos"                  "c-11"          //-285
+                    "ypos"                  "215"
+                    "wide"                  "125"
+                    "tall"                  "21"            //20
+                    "autoResize"    "0"
+                    "pinCorner"             "3"
+                    "visible"               "1"
+                    "enabled"               "1"
+                    "tabPosition"   "0"
+                    "font"                  "HudFontSmallestBold"               //"HudFontSmallestBold"
+                    "labelText"             "etf2l_6v6_5cp.cfg"
+                    "textAlignment" "center"
+                    "dulltext"              "0"
+                    "brighttext"    "0"
+                    "default"               "1"
+                    "sound_depressed"       "UI/buttonclick.wav"
+                    "sound_released"        "UI/buttonclickrelease.wav"
+                    "command"               "engine 5cpcfg"
+                   
+                    "border_default"	""
+					"border_armed"		""
+					"paintbackground"	"0"
+                   
+                    "defaultFgColor_override" "HUDWhite"
+                    "armedFgColor_override" "HUDBlue"
+                    "depressedFgColor_override" "HUDWhite"
+            }
+            "Config2Button"
+            {
+                    "ControlName"   "CExImageButton"
+                    "fieldName"             "Config2Button"
+                    "xpos"                  "c116"          //-285
+                    "ypos"                  "215"
+                    "wide"                  "125"
+                    "tall"                  "21"            //20
+                    "autoResize"    "0"
+                    "pinCorner"             "3"
+                    "visible"               "1"
+                    "enabled"               "1"
+                    "tabPosition"   "0"
+                    "font"                  "HudFontSmallestBold"
+                    "labelText"             "etf2l_6v6_koth.cfg"
+                    "textAlignment" "center"
+                    "dulltext"              "0"
+                    "brighttext"    "0"
+                    "default"               "1"
+                    "sound_depressed"       "UI/buttonclick.wav"
+                    "sound_released"        "UI/buttonclickrelease.wav"
+                    "command"               "engine kothcfg"
+                   
+                    "border_default"	""
+					"border_armed"		""
+					"paintbackground"	"0"
+                   
+                    "defaultFgColor_override" "HUDWhite"
+                    "armedFgColor_override" "HUDBlue"
+                    "depressedFgColor_override" "HUDWhite"
+            }
+           
+            "MapLabel"
+            {
+                    "ControlName"   "CExLabel"
+                    "fieldName"             "MapLabel"
+                    "font"                  "HudFontMediumSmallBold"
+                    "labelText"             "rcon changelevel"
+                    "textAlignment" "west"
+                    "xpos"                  "c-3"           //-278
+                    "ypos"                  "236"           //298
+                    "wide"                  "240"
+                    "tall"                  "30"
+                    "autoResize"    "0"
+                    "pinCorner"             "0"
+                    "visible"               "1"
+                    "enabled"               "1"
+                    "fgcolor_override"      "HUDWhite"
+            }
+			"BreakPoint3"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"		"VerticalLine"
+		"xpos"			"c-3"
+		"ypos"			"238"
+		"zpos"			"2"
+		"wide"			"235"
+		"tall"			"1"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"fillcolor"		"255 255 255 255"
+		"alpha" "75"
+	}
+            "Map1Button"
+            {
+                    "ControlName"   "CExImageButton"
+                    "fieldName"             "Map1Button"
+                    "xpos"                  "c-11"          //-285
+                    "ypos"                  "260"
+                    "wide"                  "125"
+                    "tall"                  "21"            //20
+                    "autoResize"    "0"
+                    "pinCorner"             "3"
+                    "visible"               "1"
+                    "enabled"               "1"
+                    "tabPosition"   "0"
+                    "font"                  "HudFontSmallestBold"
+                    "labelText"             "cp_badlands"
+                    "textAlignment" "center"
+                    "dulltext"              "0"
+                    "brighttext"    "0"
+                    "default"               "1"
+                    "sound_depressed"       "UI/buttonclick.wav"
+                    "sound_released"        "UI/buttonclickrelease.wav"
+                    "command"               "engine badlands"
+                   
+                    "border_default"	""
+					"border_armed"		""
+					"paintbackground"	"0"
+                   
+                    "defaultFgColor_override" "HUDWhite"
+                    "armedFgColor_override" "HUDBlue"
+                    "depressedFgColor_override" "HUDWhite"
+            }
+            "Map2Button"
+            {
+                    "ControlName"   "CExImageButton"
+                    "fieldName"             "Map2Button"
+                    "xpos"                  "c116"          //-285
+                    "ypos"                  "260"
+                    "wide"                  "125"
+                    "tall"                  "21"            //20
+                    "autoResize"    "0"
+                    "pinCorner"             "3"
+                    "visible"               "1"
+                    "enabled"               "1"
+                    "tabPosition"   "0"
+                    "font"                  "HudFontSmallestBold"
+                    "labelText"             "cp_gullywash"
+                    "textAlignment" "center"
+                    "dulltext"              "0"
+                    "brighttext"    "0"
+                    "default"               "1"
+                    "sound_depressed"       "UI/buttonclick.wav"
+                    "sound_released"        "UI/buttonclickrelease.wav"
+                    "command"               "engine gullywash"
+                   
+                    "border_default"	""
+					"border_armed"		""
+					"paintbackground"	"0"
+                   
+                    "defaultFgColor_override" "HUDWhite"
+                    "armedFgColor_override" "HUDBlue"
+                    "depressedFgColor_override" "HUDWhite"
+            }
+            "Map3Button"
+            {
+                    "ControlName"   "CExImageButton"
+                    "fieldName"             "Map3Button"
+                    "xpos"                  "c-11"          //-285
+                    "ypos"                  "282"
+                    "wide"                  "125"
+                    "tall"                  "21"            //20
+                    "autoResize"    "0"
+                    "pinCorner"             "3"
+                    "visible"               "1"
+                    "enabled"               "1"
+                    "tabPosition"   "0"
+                    "font"                  "HudFontSmallestBold"
+                    "labelText"             "cp_granary"
+                    "textAlignment" "center"
+                    "dulltext"              "0"
+                    "brighttext"    "0"
+                    "default"               "1"
+                    "sound_depressed"       "UI/buttonclick.wav"
+                    "sound_released"        "UI/buttonclickrelease.wav"
+                    "command"               "engine granary"
+                   
+                    "border_default"	""
+					"border_armed"		""
+					"paintbackground"	"0"
+                   
+                    "defaultFgColor_override" "HUDWhite"
+                    "armedFgColor_override" "HUDBlue"
+                    "depressedFgColor_override" "HUDWhite"
+            }
+            "Map4Button"
+            {
+                    "ControlName"   "CExImageButton"
+                    "fieldName"             "Map4Button"
+                    "xpos"                  "c116"          //-285
+                    "ypos"                  "282"
+                    "wide"                  "125"
+                    "tall"                  "21"            //20
+                    "autoResize"    "0"
+                    "pinCorner"             "3"
+                    "visible"               "1"
+                    "enabled"               "1"
+                    "tabPosition"   "0"
+                    "font"                  "HudFontSmallestBold"
+                    "labelText"             "cp_process"
+                    "textAlignment" "center"
+                    "dulltext"              "0"
+                    "brighttext"    "0"
+                    "default"               "1"
+                    "sound_depressed"       "UI/buttonclick.wav"
+                    "sound_released"        "UI/buttonclickrelease.wav"
+                    "command"               "engine process"
+                   
+                    "border_default"	""
+					"border_armed"		""
+					"paintbackground"	"0"
+                   
+                    "defaultFgColor_override" "HUDWhite"
+                    "armedFgColor_override" "HUDBlue"
+                    "depressedFgColor_override" "HUDWhite"
+            }
+            "Map5Button"
+            {
+                    "ControlName"   "CExImageButton"
+                    "fieldName"             "Map5Button"
+                    "xpos"                  "c-11"          //-285
+                    "ypos"                  "304"
+                    "wide"                  "125"
+                    "tall"                  "21"            //20
+                    "autoResize"    "0"
+                    "pinCorner"             "3"
+                    "visible"               "1"
+                    "enabled"               "1"
+                    "tabPosition"   "0"
+                    "font"                  "HudFontSmallestBold"
+                    "labelText"             "cp_snakewater"
+                    "textAlignment" "center"
+                    "dulltext"              "0"
+                    "brighttext"    "0"
+                    "default"               "1"
+                    "sound_depressed"       "UI/buttonclick.wav"
+                    "sound_released"        "UI/buttonclickrelease.wav"
+                    "command"               "engine nakewater"
+                   
+                    "border_default"	""
+					"border_armed"		""
+					"paintbackground"	"0"
+                   
+                    "defaultFgColor_override" "HUDWhite"
+                    "armedFgColor_override" "HUDBlue"
+                    "depressedFgColor_override" "HUDWhite"
+            }
+            "Map6Button"
+            {
+                    "ControlName"   "CExImageButton"
+                    "fieldName"             "Map6Button"
+                    "xpos"                  "c116"          //-285
+                    "ypos"                  "304"
+                    "wide"                  "125"
+                    "tall"                  "21"            //20
+                    "autoResize"    "0"
+                    "pinCorner"             "3"
+                    "visible"               "1"
+                    "enabled"               "1"
+                    "tabPosition"   "0"
+                    "font"                  "HudFontSmallestBold"
+                    "labelText"             "cp_logjam"
+                    "textAlignment" "center"
+                    "dulltext"              "0"
+                    "brighttext"    "0"
+                    "default"               "1"
+                    "sound_depressed"       "UI/buttonclick.wav"
+                    "sound_released"        "UI/buttonclickrelease.wav"
+                    "command"               "engine logjam"
+                   
+                    "border_default"	""
+					"border_armed"		""
+					"paintbackground"	"0"
+                   
+                    "defaultFgColor_override" "HUDWhite"
+                    "armedFgColor_override" "HUDBlue"
+                    "depressedFgColor_override" "HUDWhite"
+            }
+            "Map7Button"
+            {
+                    "ControlName"   "CExImageButton"
+                    "fieldName"             "Map7Button"
+                    "xpos"                  "c-11"          //-285
+                    "ypos"                  "326"
+                    "wide"                  "125"
+                    "tall"                  "21"            //20
+                    "autoResize"    "0"
+                    "pinCorner"             "3"
+                    "visible"               "1"
+                    "enabled"               "1"
+                    "tabPosition"   "0"
+                    "font"                  "HudFontSmallestBold"
+                    "labelText"             "koth_pro_viaduct"
+                    "textAlignment" "center"
+                    "dulltext"              "0"
+                    "brighttext"    "0"
+                    "default"               "1"
+                    "sound_depressed"       "UI/buttonclick.wav"
+                    "sound_released"        "UI/buttonclickrelease.wav"
+                    "command"               "engine viaduct"
+                   
+                    "border_default"	""
+					"border_armed"		""
+					"paintbackground"	"0"
+                   
+                    "defaultFgColor_override" "HUDWhite"
+                    "armedFgColor_override" "HUDBlue"
+                    "depressedFgColor_override" "HUDWhite"
+            }
+
+
+		
+		 "MenuBG1"
+        {
+                "ControlName"				"CExImageButton"
+                "fieldName"					"Background"
+                "xpos"						"160"
+                "ypos"						"c-130"
+                "zpos"						"2"
+                "wide"						"225"
+                "tall"						"250"
+                "visible"					"0"
+                "enabled"					"1"
+                "defaultbgcolor_override"	"0 0 0 140"
+                "PaintBackgroundType"		"0"
+                "TextInsetX"				"999999"
+        }
 		
 		"SaxxySettings"
 		{
@@ -102,12 +560,12 @@
 			"flash_lifelength_min"	".1"
 			"flash_lifelength_max"	".2"
 			
-			"curtain_anim_duLiberon"		"4.0"
+			"curtain_anim_duration"		"4.0"
 			"curtain_open_time"		"2.8"
 			"flash_start_time"		"4.0"
 			
-			"initial_freakout_duLiberon"		"15.0"
-			"clap_sound_duLiberon"	"10.0"
+			"initial_freakout_duration"		"15.0"
+			"clap_sound_duration"	"10.0"
 			
 			"CameraFlashSettings"
 			{
@@ -136,23 +594,23 @@
 		
 		if_halloween_0
 		{
-			"image"		"../console/title_team_halloween2011"
+			"image"		"../console/background_upward_widescreen"
 		}
 		if_halloween_1
 		{
-			"image"		"../console/title_team_halloween2012"
+			"image"		"../console/background_upward_widescreen"
 		}
 		if_halloween_2
 		{
-			"image"		"../console/title_team_halloween2013"
+			"image"		"../console/background_upward_widescreen"
 		}
 		if_fullmoon
 		{
-			"image"		"../console/title_fullmoon"
+			"image"		"../console/background_upward_widescreen"
 		}
 		if_christmas
 		{
-			"image"		"../console/background_xmas2011"
+			"image"		"../console/background_upward_widescreen"
 		}
 	}
 					
@@ -160,13 +618,13 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"TFLogoImage"
-		"xpos"			"c-290"
+		"xpos"			"9999"
 		"ypos"			"24"
 		"zpos"			"-99"
 		"wide"			"256"
 		"tall"			"64"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"image"			"../logo/new_tf2_logo"
 		"scaleImage"	"1"
 	}	
@@ -180,7 +638,7 @@
 		"zpos"			"-99"
 		"wide"			"600"
 		"tall"			"600"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"scaleImage"	"1"
 	}
@@ -194,7 +652,7 @@
 		"zpos"			"-1"
 		"wide"			"260"
 		"tall"			"120"
-		"visible"		"1"
+		"visible"		"0"
 		"pinCorner"		"0"
 		"autoResize"	"0"
 		"PaintBackgroundType"	"2"
@@ -204,7 +662,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayLabel"
-		"font"			"HudFontSmallBold"
+		"font"			"HudFontMediumBold"
 		"labelText"		"#MMenu_Play"
 		"textAlignment"	"west"
 		"xpos"			"c-278"
@@ -213,7 +671,7 @@
 		"tall"			"30"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"fgcolor_override"	"235 227 203 255"
 	}
@@ -255,7 +713,7 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"TipLabel"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumSmallBold"
 			"labelText"		"%tiptext%"
 			"textAlignment"	"center"
 			"xpos"			"20"
@@ -267,7 +725,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor_override"	"235 226 202 255"
+			"fgcolor_override"	"TanLight"
 			"auto_wide_tocontents" "1"
 		}
 	}	
@@ -276,7 +734,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"CreateServerButton"
-		"xpos"			"c-185"
+		"xpos"			"c-165"
 		"ypos"			"183"
 		"zpos"			"12"
 		"wide"			"20"
@@ -304,7 +762,7 @@
 			"tabPosition"	"0"
 			"textinsetx"	"100"
 			"use_proportional_insets" "1"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumBold"
 			"textAlignment"	"west"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -312,16 +770,16 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
-			"border_default"	"MainMenuMiniButtonDefault"
-			"border_armed"		"MainMenuMiniButtonArmed"
+			"border_default"	""
+			"border_armed"		""
 			"paintbackground"	"0"
 			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "46 43 42 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"defaultFgColor_override" "255 255 255 255"
+			"armedFgColor_override" "HUDBlue"
+			"depressedFgColor_override" "255 255 255 255"
 			
-			"image_drawcolor"	"235 226 202 255"
-			"image_armedcolor"	"235 226 202 255"
+			"image_drawcolor"	"TanLight"
+			"image_armedcolor"	"TanLight"
 			
 			"SubImage"
 			{
@@ -387,7 +845,7 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			"paintbackground" "0"
-			"image_drawcolor"	"235 226 202 255"
+			"image_drawcolor"	"TanLight"
 			"image_armedcolor"	"255 255 255 255"
 
 			"SubImage"
@@ -439,7 +897,7 @@
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"MOTD_HeaderLabel"
-				"font"			"HudFontSmallBold"
+				"font"			"HudFontMediumSmallBold"
 				"textAlignment"	"center"
 				"labelText"		"%motdheader%"
 				"xpos"			"0"
@@ -451,7 +909,7 @@
 				"visible"		"1"
 				"enabled"		"1"
 				"PaintBackgroundType" "2"
-				"fgcolor_override"	"235 226 202 255"
+				"fgcolor_override"	"TanLight"
 				"bgcolor_override"	"141 178 61 255"
 			}
 		}
@@ -471,7 +929,7 @@
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"labeltext"		""
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumSmallBold"
 			"textAlignment"	"center"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -486,13 +944,13 @@
 			
 			"paintbackground"	"0"
 			
-			//"defaultFgColor_override" "235 226 202 255"
+			//"defaultFgColor_override" "HUDRed"
 			//"armedFgColor_override" "46 43 42 255"
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"defaultFgColor_override" "255 255 255 255"
+			"armedFgColor_override" "HUDBlue"
+			"depressedFgColor_override" "255 255 255 255"
 			
-			"image_drawcolor"	"235 226 202 255"
+			"image_drawcolor"	"200 80 60 255"
 			"image_armedcolor"	"200 80 60 255"
 			"SubImage"
 			{
@@ -529,7 +987,7 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"MOTD_TitleLabel"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumSmallBold"
 			"labelText"		"%motdtitle%"
 			"textAlignment"	"west"
 			"xpos"			"10"
@@ -677,10 +1135,10 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
-			"defaultFgColor_override" "235 226 202 255"
+			"defaultFgColor_override" "TanLight"
 			"defaultBgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "235 226 202 255"
+			"armedFgColor_override" "HUDBlue"
+			"depressedFgColor_override" "TanLight"
 		}	
 		
 		"MOTD_PrevButton"
@@ -698,7 +1156,7 @@
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"labelText"		""
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumSmallBold"
 			"textAlignment"	"center"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -712,7 +1170,7 @@
 			"sound_released"	"UI/buttonclickrelease.wav"
 			"paintbackground" "0"
 			
-			"image_drawcolor"	"235 226 202 255"
+			"image_drawcolor"	"HUDRed"
 			"image_armedcolor"	"255 255 255 255"
 			"SubImage"
 			{
@@ -745,7 +1203,7 @@
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"labelText"		""
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumSmallBold"
 			"textAlignment"	"center"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -759,7 +1217,7 @@
 			"sound_released"	"UI/buttonclickrelease.wav"
 			"paintbackground" "0"
 			
-			"image_drawcolor"	"235 226 202 255"
+			"image_drawcolor"	"HUDRed"
 			"image_armedcolor"	"255 255 255 255"
 			"SubImage"
 			{
@@ -860,7 +1318,7 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			"paintbackground" "0"
-			"image_drawcolor"	"235 226 202 255"
+			"image_drawcolor"	"HUDRed"
 			"image_armedcolor"	"255 255 255 255"
 			
 			"SubImage"
@@ -915,7 +1373,7 @@
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"labeltext"		""
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumSmallBold"
 			"textAlignment"	"center"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -929,9 +1387,9 @@
 
 			"paintbackground"	"0"
 			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"defaultFgColor_override" "255 255 255 255"
+			"armedFgColor_override" "HUDBlue"
+			"depressedFgColor_override" "255 255 255 255"
 			
 			"image_drawcolor"	"117 107 94 255"
 			"image_armedcolor"	"200 80 60 255"
@@ -955,7 +1413,7 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"Notifications_TitleLabel"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumSmallBold"
 			"labelText"		"%notititle%"
 			"textAlignment"	"north-west"
 			"xpos"			"12"
@@ -1049,12 +1507,12 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"TrainingButton"
-		"xpos"			"c-160"
+		"xpos"			"c-1600"
 		"ypos"			"180"
 		"zpos"			"11"
 		"wide"			"135"
 		"tall"			"36"
-		"visible"		"1"
+		"visible"		"0"
 		"PaintBackgroundType"	"2"
 
 		"navUp"			"PlayPVEButton"
@@ -1078,7 +1536,7 @@
 			"tabPosition"	"0"
 			"textinsetx"	"25"
 			"use_proportional_insets" "1"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumSmallBold"
 			"textAlignment"	"west"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -1086,16 +1544,16 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
-			"border_default"	"MainMenuButtonDefault"
-			"border_armed"		"MainMenuButtonArmed"
+			"border_default"	""
+			"border_armed"		""
 			"paintbackground"	"0"
 			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"defaultFgColor_override" "255 255 255 255"
+			"armedFgColor_override" "HUDBlue"
+			"depressedFgColor_override" "255 255 255 255"
 			
 			"image_drawcolor"	"117 107 94 255"
-			"image_armedcolor"	"235 226 202 255"
+			"image_armedcolor"	"HUDRed"
 			"SubImage"
 			{
 				"ControlName"	"ImagePanel"
@@ -1105,7 +1563,7 @@
 				"zpos"			"1"
 				"wide"			"14"
 				"tall"			"14"
-				"visible"		"1"
+				"visible"		"0"
 				"enabled"		"1"
 				"scaleImage"	"1"
 			}		
@@ -1116,12 +1574,12 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"SteamWorkshopButton"
-		"xpos"			"c-160"
+		"xpos"			"c-1600"
 		"ypos"			"326"
 		"zpos"			"11"
 		"wide"			"135"
 		"tall"			"36"
-		"visible"		"1"
+		"visible"		"0"
 		"PaintBackgroundType"	"2"
 
 		"navUp"			"GeneralStoreButton"
@@ -1145,7 +1603,7 @@
 			"tabPosition"	"0"
 			"textinsetx"	"25"
 			"use_proportional_insets" "1"
-			"font"			"HudFontSmallBold"
+			"font"			"LiberB25"
 			"textAlignment"	"west"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -1153,16 +1611,16 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
-			"border_default"	"MainMenuButtonDefault"
-			"border_armed"		"MainMenuButtonArmed"
+			"border_default"	""
+			"border_armed"		""
 			"paintbackground"	"0"
 			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"defaultFgColor_override" "255 255 255 255"
+			"armedFgColor_override" "HUDBlue"
+			"depressedFgColor_override" "255 255 255 255"
 			
 			"image_drawcolor"	"117 107 94 255"
-			"image_armedcolor"	"235 226 202 255"
+			"image_armedcolor"	"HUDRed"
 			"SubImage"
 			{
 				"ControlName"	"ImagePanel"
@@ -1172,7 +1630,7 @@
 				"zpos"			"1"
 				"wide"			"14"
 				"tall"			"14"
-				"visible"		"1"
+				"visible"		"0"
 				"enabled"		"1"
 				"scaleImage"	"1"
 			}		
@@ -1211,7 +1669,7 @@
 			"tabPosition"	"0"
 			"textinsetx"	"25"
 			"use_proportional_insets" "1"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumSmallBold"
 			"textAlignment"	"west"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -1219,16 +1677,16 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
-			"border_default"	"MainMenuButtonDefault"
-			"border_armed"		"MainMenuButtonArmed"
+			"border_default"	""
+			"border_armed"		""
 			"paintbackground"	"0"
 			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"defaultFgColor_override" "255 255 255 255"
+			"armedFgColor_override" "HUDBlue"
+			"depressedFgColor_override" "255 255 255 255"
 			
 			"image_drawcolor"	"117 107 94 255"
-			"image_armedcolor"	"235 226 202 255"
+			"image_armedcolor"	"HUDRed"
 			"SubImage"
 			{
 				"ControlName"	"ImagePanel"
@@ -1278,7 +1736,7 @@
 			"tabPosition"	"0"
 			"textinsetx"	"25"
 			"use_proportional_insets" "1"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumBold"
 			"textAlignment"	"west"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -1286,16 +1744,16 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
-			"border_default"	"MainMenuButtonDefault"
-			"border_armed"		"MainMenuButtonArmed"
+			"border_default"	""
+			"border_armed"		""
 			"paintbackground"	"0"
 			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"defaultFgColor_override" "255 255 255 255"
+			"armedFgColor_override" "HUDBlue"
+			"depressedFgColor_override" "255 255 255 255"
 			
 			"image_drawcolor"	"117 107 94 255"
-			"image_armedcolor"	"235 226 202 255"
+			"image_armedcolor"	"HUDRed"
 			"SubImage"
 			{
 				"ControlName"	"ImagePanel"
@@ -1305,7 +1763,7 @@
 				"zpos"			"1"
 				"wide"			"14"
 				"tall"			"14"
-				"visible"		"1"
+				"visible"		"0"
 				"enabled"		"1"
 				"scaleImage"	"1"
 			}		
@@ -1316,8 +1774,8 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"GeneralStoreButton"
-		"xpos"			"c-160"
-		"ypos"			"253"
+		"xpos"			"c-285"
+		"ypos"			"218"
 		"zpos"			"11"
 		"wide"			"135"
 		"tall"			"36"
@@ -1345,7 +1803,7 @@
 			"tabPosition"	"0"
 			"textinsetx"	"25"
 			"use_proportional_insets" "1"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumBold"
 			"textAlignment"	"west"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -1353,16 +1811,16 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
-			"border_default"	"MainMenuButtonDefault"
-			"border_armed"		"MainMenuButtonArmed"
+			"border_default"	""
+			"border_armed"		""
 			"paintbackground"	"0"
 			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"defaultFgColor_override" "255 255 255 255"
+			"armedFgColor_override" "HUDBlue"
+			"depressedFgColor_override" "255 255 255 255"
 			
 			"image_drawcolor"	"117 107 94 255"
-			"image_armedcolor"	"235 226 202 255"
+			"image_armedcolor"	"HUDRed"
 			"SubImage"
 			{
 				"ControlName"	"ImagePanel"
@@ -1372,7 +1830,7 @@
 				"zpos"			"1"
 				"wide"			"14"
 				"tall"			"14"
-				"visible"		"1"
+				"visible"		"0"
 				"enabled"		"1"
 				"scaleImage"	"1"
 			}		
@@ -1382,7 +1840,7 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"StoreHasNewItemsImage"
-		"xpos"			"c-59"
+		"xpos"			"9999"
 		"ypos"			"245"
 		"zpos"			"13"
 		"wide"			"32"
@@ -1425,7 +1883,7 @@
 			"tabPosition"	"0"
 			"textinsetx"	"25"
 			"use_proportional_insets" "1"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumBold"
 			"textAlignment"	"west"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -1433,16 +1891,16 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
-			"border_default"	"MainMenuButtonDefault"
-			"border_armed"		"MainMenuButtonArmed"
+			"border_default"	""
+			"border_armed"		""
 			"paintbackground"	"0"
 			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"defaultFgColor_override" "255 255 255 255"
+			"armedFgColor_override" "HUDBlue"
+			"depressedFgColor_override" "255 255 255 255"
 			
 			"image_drawcolor"	"117 107 94 255"
-			"image_armedcolor"	"235 226 202 255"
+			"image_armedcolor"	"HUDRed"
 			"SubImage"
 			{
 				"ControlName"	"ImagePanel"
@@ -1452,7 +1910,7 @@
 				"zpos"			"1"
 				"wide"			"14"
 				"tall"			"14"
-				"visible"		"1"
+				"visible"		"0"
 				"enabled"		"1"
 				"scaleImage"	"1"
 			}		
@@ -1468,7 +1926,7 @@
 		"zpos"			"-1"
 		"wide"			"260"
 		"tall"			"60"
-		"visible"		"1"
+		"visible"		"0"
 		"PaintBackgroundType"	"2"
 		"border"		"MainMenuBGBorder"
 	}
@@ -1476,7 +1934,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"CustomizeLabel"
-		"font"			"HudFontSmallBold"
+		"font"			"HudFontMediumBold"
 		"labelText"		"#MMenu_Customize"
 		"textAlignment"	"west"
 		"xpos"			"c-278"
@@ -1485,7 +1943,7 @@
 		"tall"			"30"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"fgcolor_override"	"235 227 203 255"
 	}
@@ -1499,7 +1957,7 @@
 		"zpos"			"-1"
 		"wide"			"260"
 		"tall"			"60"
-		"visible"		"1"
+		"visible"		"0"
 		"PaintBackgroundType"	"2"
 		"border"		"MainMenuBGBorder"
 	}
@@ -1507,7 +1965,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"CreateLabel"
-		"font"			"HudFontSmallBold"
+		"font"			"HudFontMediumSmallBold"
 		"labelText"		"#MMenu_Create"
 		"textAlignment"	"west"
 		"xpos"			"c-278"
@@ -1516,7 +1974,7 @@
 		"tall"			"30"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"fgcolor_override"	"235 227 203 255"
 	}
@@ -1539,14 +1997,14 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"ShowPromoCodesButton"
-		"xpos"			"c-285"
+		"xpos"			"c-2850"
 		"ypos"			"397"
 		"wide"			"250"
 		"tall"			"20"
 		"autoResize"	"0"
 		"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"tabPosition"	"0"
 		"font"			"HudFontSmallestBold"
 		"labelText"		"#MMenu_ShowPromoCodes"
@@ -1558,13 +2016,13 @@
 		"sound_released"	"UI/buttonclickrelease.wav"
 		"command"		"showpromocodes"
 		
-		"border_default"	"MainMenuButtonDefault"
-		"border_armed"		"MainMenuButtonArmed"
+		"border_default"	""
+		"border_armed"		""
 		"paintbackground"	"0"
 		
-		"defaultFgColor_override" "46 43 42 255"
-		"armedFgColor_override" "235 226 202 255"
-		"depressedFgColor_override" "46 43 42 255"
+		"defaultFgColor_override" "255 255 255 255"
+		"armedFgColor_override" "HUDBlue"
+		"depressedFgColor_override" "255 255 255 255"
 	}
 	"FreeTrialPanel"
 	{
@@ -1613,7 +2071,7 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"UpgradeLabel2"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumSmallBold"
 			"labelText"		"#TF_Trial_MainMenu_Upgrade2"
 			"textAlignment"	"north"
 			"xpos"			"80"
@@ -1678,7 +2136,7 @@
 			"tabPosition"	"0"
 			"textinsetx"	"25"
 			"use_proportional_insets" "1"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumBold"
 			"textAlignment"	"west"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -1686,16 +2144,16 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
-			"border_default"	"MainMenuButtonDefault"
-			"border_armed"		"MainMenuButtonArmed"
+			"border_default"	""
+			"border_armed"		""
 			"paintbackground"	"0"
 			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"defaultFgColor_override" "255 255 255 255"
+			"armedFgColor_override" "HUDBlue"
+			"depressedFgColor_override" "255 255 255 255"
 			
 			"image_drawcolor"	"117 107 94 255"
-			"image_armedcolor"	"235 226 202 255"
+			"image_armedcolor"	"HUDRed"
 
 			"SubImage"
 			{
@@ -1706,7 +2164,7 @@
 				"zpos"			"1"
 				"wide"			"14"
 				"tall"			"14"
-				"visible"		"1"
+				"visible"		"0"
 				"enabled"		"1"
 				"scaleImage"	"1"
 			}
@@ -1745,7 +2203,7 @@
 			"tabPosition"	"0"
 			"textinsetx"	"25"
 			"use_proportional_insets" "1"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumBold"
 			"textAlignment"	"west"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -1753,16 +2211,16 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
-			"border_default"	"MainMenuButtonDefault"
-			"border_armed"		"MainMenuButtonArmed"
+			"border_default"	""
+			"border_armed"		""
 			"paintbackground"	"0"
 			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"defaultFgColor_override" "255 255 255 255"
+			"armedFgColor_override" "HUDBlue"
+			"depressedFgColor_override" "255 255 255 255"
 			
 			"image_drawcolor"	"117 107 94 255"
-			"image_armedcolor"	"235 226 202 255"
+			"image_armedcolor"	"HUDRed"
 
 			"SubImage"
 			{
@@ -1773,7 +2231,7 @@
 				"zpos"			"1"
 				"wide"			"14"
 				"tall"			"14"
-				"visible"		"1"
+				"visible"		"0"
 				"enabled"		"1"
 				"scaleImage"	"1"
 			}
@@ -1812,7 +2270,7 @@
 			"tabPosition"	"0"
 			"textinsetx"	"25"
 			"use_proportional_insets" "1"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumBold"
 			"textAlignment"	"west"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -1820,16 +2278,16 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
-			"border_default"	"MainMenuButtonDefault"
-			"border_armed"		"MainMenuButtonArmed"
+			"border_default"	""
+			"border_armed"		""
 			"paintbackground"	"0"
 			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"defaultFgColor_override" "255 255 255 255"
+			"armedFgColor_override" "HUDBlue"
+			"depressedFgColor_override" "255 255 255 255"
 			
 			"image_drawcolor"	"117 107 94 255"
-			"image_armedcolor"	"235 226 202 255"
+			"image_armedcolor"	"HUDRed"
 
 			"SubImage"
 			{
@@ -1840,7 +2298,7 @@
 				"zpos"			"1"
 				"wide"			"14"
 				"tall"			"14"
-				"visible"		"1"
+				"visible"		"0"
 				"enabled"		"1"
 				"scaleImage"	"1"
 			}
@@ -1879,7 +2337,7 @@
 			"tabPosition"	"0"
 			"textinsetx"	"25"
 			"use_proportional_insets" "1"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumBold"
 			"textAlignment"	"west"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -1887,16 +2345,16 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
-			"border_default"	"MainMenuButtonDefault"
-			"border_armed"		"MainMenuButtonArmed"
+			"border_default"	""
+			"border_armed"		""
 			"paintbackground"	"0"
 			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"defaultFgColor_override" "255 255 255 255"
+			"armedFgColor_override" "HUDBlue"
+			"depressedFgColor_override" "255 255 255 255"
 			
 			"image_drawcolor"	"117 107 94 255"
-			"image_armedcolor"	"235 226 202 255"
+			"image_armedcolor"	"HUDRed"
 
 			"SubImage"
 			{
@@ -1907,7 +2365,7 @@
 				"zpos"			"1"
 				"wide"			"14"
 				"tall"			"14"
-				"visible"		"1"
+				"visible"		"0"
 				"enabled"		"1"
 				"scaleImage"	"1"
 			}
@@ -1946,7 +2404,7 @@
 			"tabPosition"	"0"
 			"textinsetx"	"25"
 			"use_proportional_insets" "1"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumBold"
 			"textAlignment"	"west"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -1954,16 +2412,16 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
-			"border_default"	"MainMenuButtonDefault"
-			"border_armed"		"MainMenuButtonArmed"
+			"border_default"	""
+			"border_armed"		""
 			"paintbackground"	"0"
 			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"defaultFgColor_override" "255 255 255 255"
+			"armedFgColor_override" "HUDBlue"
+			"depressedFgColor_override" "255 255 255 255"
 			
 			"image_drawcolor"	"117 107 94 255"
-			"image_armedcolor"	"235 226 202 255"
+			"image_armedcolor"	"HUDRed"
 
 			"SubImage"
 			{
@@ -1974,7 +2432,7 @@
 				"zpos"			"1"
 				"wide"			"14"
 				"tall"			"14"
-				"visible"		"1"
+				"visible"		"0"
 				"enabled"		"1"
 				"scaleImage"	"1"
 			}
@@ -2013,7 +2471,7 @@
 			"tabPosition"	"0"
 			"textinsetx"	"25"
 			"use_proportional_insets" "1"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumBold"
 			"textAlignment"	"west"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -2021,16 +2479,16 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
-			"border_default"	"MainMenuButtonDefault"
-			"border_armed"		"MainMenuButtonArmed"
+			"border_default"	""
+			"border_armed"		""
 			"paintbackground"	"0"
 			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"defaultFgColor_override" "255 255 255 255"
+			"armedFgColor_override" "HUDBlue"
+			"depressedFgColor_override" "255 255 255 255"
 			
 			"image_drawcolor"	"117 107 94 255"
-			"image_armedcolor"	"235 226 202 255"
+			"image_armedcolor"	"HUDRed"
 
 			"SubImage"
 			{
@@ -2041,7 +2499,7 @@
 				"zpos"			"1"
 				"wide"			"14"
 				"tall"			"14"
-				"visible"		"1"
+				"visible"		"0"
 				"enabled"		"1"
 				"scaleImage"	"1"
 			}
@@ -2079,7 +2537,7 @@
 			"tabPosition"	"0"
 			"textinsetx"	"100"
 			"use_proportional_insets" "1"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumSmallBold"
 			"textAlignment"	"west"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -2087,16 +2545,16 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
-			"border_default"	"MainMenuMiniButtonDefault"
-			"border_armed"		"MainMenuMiniButtonArmed"
+			"border_default"	""
+			"border_armed"		""
 			"paintbackground"	"0"
 			
-			"defaultFgColor_override" "46 43 42 255"
+			"defaultFgColor_override" "255 255 255 255"
 			"armedFgColor_override" "46 43 42 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"depressedFgColor_override" "255 255 255 255"
 			
-			"image_drawcolor"	"235 226 202 255"
-			"image_armedcolor"	"235 226 202 255"
+			"image_drawcolor"	"HUDRed"
+			"image_armedcolor"	"HUDRed"
 			
 			"SubImage"
 			{
@@ -2145,7 +2603,7 @@
 			"tabPosition"	"0"
 			"textinsetx"	"100"
 			"use_proportional_insets" "1"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumSmallBold"
 			"textAlignment"	"west"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -2153,16 +2611,16 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
-			"border_default"	"MainMenuMiniButtonDefault"
-			"border_armed"		"MainMenuMiniButtonArmed"
+			"border_default"	""
+			"border_armed"		""
 			"paintbackground"	"0"
 			
-			"defaultFgColor_override" "46 43 42 255"
+			"defaultFgColor_override" "255 255 255 255"
 			"armedFgColor_override" "46 43 42 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"depressedFgColor_override" "255 255 255 255"
 			
-			"image_drawcolor"	"235 226 202 255"
-			"image_armedcolor"	"235 226 202 255"
+			"image_drawcolor"	"HUDRed"
+			"image_armedcolor"	"HUDRed"
 			
 			"SubImage"
 			{
@@ -2212,7 +2670,7 @@
 			"tabPosition"	"0"
 			"textinsetx"	"100"
 			"use_proportional_insets" "1"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumSmallBold"
 			"textAlignment"	"west"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -2220,16 +2678,16 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
-			"border_default"	"MainMenuMiniButtonDefault"
-			"border_armed"		"MainMenuMiniButtonArmed"
+			"border_default"	""
+			"border_armed"		""
 			"paintbackground"	"0"
 			
-			"defaultFgColor_override" "46 43 42 255"
+			"defaultFgColor_override" "255 255 255 255"
 			"armedFgColor_override" "46 43 42 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"depressedFgColor_override" "255 255 255 255"
 			
-			"image_drawcolor"	"235 226 202 255"
-			"image_armedcolor"	"235 226 202 255"
+			"image_drawcolor"	"HUDRed"
+			"image_armedcolor"	"HUDRed"
 			
 			"SubImage"
 			{
@@ -2257,7 +2715,7 @@
 		"zpos"			"-50"
 		"wide"			"f0"
 		"tall"			"60"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"image"			"loadout_bottom_gradient"
 		"tileImage"		"1"
@@ -2271,7 +2729,8 @@
 		"zpos"			"-5-"
 		"wide"			"f0"
 		"tall"			"10"
-		"visible"		"1"
+		"visible"		"0"
+		"visible"		"0"
 		"enabled"		"1"
 		"image"			"loadout_solid_line"
 		"scaleImage"	"1"
@@ -2284,7 +2743,7 @@
 		"xpos"			"c-131"
 		"ypos"			"437"
 		"zpos"			"2"
-		"wide"			"30"
+		"wide"			"28"
 		"tall"			"25"
 		"autoResize"	"0"
 		"pinCorner"		"3"
@@ -2292,7 +2751,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		""
-		"font"			"HudFontSmallBold"
+		"font"			"HudFontMediumSmallBold"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
@@ -2307,7 +2766,7 @@
 		"sound_released"	"UI/buttonclickrelease.wav"
 		"PaintBackgroundType" "0"
 		
-		"image_drawcolor"	"235 226 202 255"
+		"image_drawcolor"	"HUDWhite"
 		"SubImage"
 		{
 			"ControlName"	"ImagePanel"
@@ -2328,10 +2787,10 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"AchievementsButton"
-		"xpos"			"c-106"
+		"xpos"			"c-103"
 		"ypos"			"437"
 		"zpos"			"3"
-		"wide"			"30"
+		"wide"			"25"
 		"tall"			"25"
 		"autoResize"	"0"
 		"pinCorner"		"3"
@@ -2339,7 +2798,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		""
-		"font"			"HudFontSmallBold"
+		"font"			"HudFontMediumSmallBold"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
@@ -2354,7 +2813,7 @@
 		"sound_released"	"UI/buttonclickrelease.wav"
 		"border_default"	"MainMenuSubButtonBorder"
 		
-		"image_drawcolor"	"235 226 202 255"
+		"image_drawcolor"	"HUDWhite"
 		"SubImage"
 		{
 			"ControlName"	"ImagePanel"
@@ -2375,10 +2834,10 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"CommentaryButton"
-		"xpos"			"c-81"
+		"xpos"			"c-78"
 		"ypos"			"437"
 		"zpos"			"4"
-		"wide"			"30"
+		"wide"			"25"
 		"tall"			"25"
 		"autoResize"	"0"
 		"pinCorner"		"3"
@@ -2386,7 +2845,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		""
-		"font"			"HudFontSmallBold"
+		"font"			"HudFontMediumSmallBold"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
@@ -2401,7 +2860,7 @@
 		"sound_released"	"UI/buttonclickrelease.wav"
 		"border_default"	"MainMenuSubButtonBorder"
 		
-		"image_drawcolor"	"235 226 202 255"
+		"image_drawcolor"	"HUDWhite"
 		"SubImage"
 		{
 			"ControlName"	"ImagePanel"
@@ -2422,7 +2881,7 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"CoachPlayersButton"
-		"xpos"			"c-56"
+		"xpos"			"c-53"
 		"ypos"			"437"
 		"zpos"			"5"
 		"wide"			"25"
@@ -2433,7 +2892,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		""
-		"font"			"HudFontSmallBold"
+		"font"			"HudFontMediumSmallBold"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
@@ -2448,7 +2907,7 @@
 		"sound_released"	"UI/buttonclickrelease.wav"
 		"border_default"	"MainMenuSubButtonBorder"
 		
-		"image_drawcolor"	"235 226 202 255"
+		"image_drawcolor"	"HUDWhite"
 		"SubImage"
 		{
 			"ControlName"	"ImagePanel"
@@ -2469,10 +2928,10 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"ReportBugButton"
-		"xpos"			"c-36"
+		"xpos"			"c-28"
 		"ypos"			"437"
 		"zpos"			"1"
-		"wide"			"30"
+		"wide"			"25"
 		"tall"			"25"
 		"autoResize"	"0"
 		"pinCorner"		"3"
@@ -2480,7 +2939,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		""
-		"font"			"HudFontSmallBold"
+		"font"			"HudFontMediumSmallBold"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
@@ -2494,12 +2953,12 @@
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 		
-		"image_drawcolor"	"235 226 202 255"
+		"image_drawcolor"	"HUDWhite"
 		"SubImage"
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"SubImage"
-			"xpos"			"10"
+			"xpos"			"6"
 			"ypos"			"5"
 			"zpos"			"1"
 			"wide"			"15"
@@ -2526,7 +2985,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#MMenu_AdvOptions"
-		"font"			"HudFontSmallBold"
+		"font"			"HudFontMediumSmallBold"
 		"textAlignment"	"east"
 		"textinsetx"	"25"
 		"dulltext"		"0"
@@ -2540,7 +2999,7 @@
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 		
-		"image_drawcolor"	"235 226 202 255"
+		"image_drawcolor"	"HUDRed"
 		"SubImage"
 		{
 			"ControlName"	"ImagePanel"
@@ -2573,7 +3032,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#GameUI_GameMenu_Options"
-		"font"			"HudFontSmallBold"
+		"font"			"HudFontMediumSmallBold"
 		"textAlignment"	"west"
 		"textinsetx"	"35"
 		"use_proportional_insets" "1"
@@ -2589,7 +3048,7 @@
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 		
-		"image_drawcolor"	"235 226 202 255"
+		"image_drawcolor"	"HUDRed"
 		"SubImage"
 		{
 			"ControlName"	"ImagePanel"
@@ -2621,7 +3080,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#TF_Quit_Title"
-		"font"			"HudFontSmallBold"
+		"font"			"HudFontMediumSmallBold"
 		"textAlignment"	"west"
 		"textinsetx"	"35"
 		"use_proportional_insets" "1"
@@ -2638,7 +3097,7 @@
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 		
-		"image_drawcolor"	"235 226 202 255"
+		"image_drawcolor"	"HUDRed"
 		"SubImage"
 		{
 			"ControlName"	"ImagePanel"
@@ -2670,7 +3129,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#GameUI_GameMenu_Disconnect"
-		"font"			"HudFontSmallBold"
+		"font"			"HudFontMediumSmallBold"
 		"textAlignment"	"west"
 		"textinsetx"	"35"
 		"use_proportional_insets" "1"
@@ -2684,7 +3143,7 @@
 		"navUp"			"QuitButton"
 		"navRight"		"NewUserForumsButton"
 		
-		"image_drawcolor"	"235 226 202 255"
+		"image_drawcolor"	"HUDRed"
 		"SubImage"
 		{
 			"ControlName"	"ImagePanel"
@@ -2716,7 +3175,7 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#GameUI_GameMenu_ExitReplay"
-		"font"			"HudFontSmallBold"
+		"font"			"HudFontMediumSmallBold"
 		"textAlignment"	"west"
 		"textinsetx"	"35"
 		"use_proportional_insets" "1"
@@ -2727,7 +3186,7 @@
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 		
-		"image_drawcolor"	"235 226 202 255"
+		"image_drawcolor"	"HUDRed"
 		"SubImage"
 		{
 			"ControlName"	"ImagePanel"
@@ -2773,7 +3232,7 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"TitleLabel"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumSmallBold"
 			"labelText"		"%highlighttext%"
 			"textAlignment"	"center"
 			"xpos"			"20"
@@ -2830,7 +3289,7 @@
 				"enabled"		"1"
 				"tabPosition"	"0"
 				"labeltext"		"#MMenu_TutorialHighlight_Button"
-				"font"			"HudFontSmallBold"
+				"font"			"HudFontMediumSmallBold"
 				"textAlignment"	"center"
 				"dulltext"		"0"
 				"brighttext"	"0"
@@ -2839,16 +3298,16 @@
 				"sound_released"	"UI/buttonclickrelease.wav"
 				"Command"		"tutorial"
 				
-				"border_default"	"MainMenuButtonDefault"
-				"border_armed"		"MainMenuButtonArmed"
+				"border_default"	""
+				"border_armed"		""
 				"paintbackground"	"0"
 				
-				"defaultFgColor_override" "46 43 42 255"
-				"armedFgColor_override" "235 226 202 255"
-				"depressedFgColor_override" "46 43 42 255"
+				"defaultFgColor_override" "255 255 255 255"
+				"armedFgColor_override" "HUDBlue"
+				"depressedFgColor_override" "255 255 255 255"
 				
 				"image_drawcolor"	"117 107 94 255"
-				"image_armedcolor"	"235 226 202 255"
+				"image_armedcolor"	"HUDRed"
 				"SubImage"
 				{
 					"ControlName"	"ImagePanel"
@@ -2880,7 +3339,7 @@
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"labeltext"		""
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumSmallBold"
 			"textAlignment"	"center"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -2891,9 +3350,9 @@
 			
 			"paintbackground"	"0"
 			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"defaultFgColor_override" "255 255 255 255"
+			"armedFgColor_override" "HUDBlue"
+			"depressedFgColor_override" "255 255 255 255"
 			
 			"image_drawcolor"	"117 107 94 255"
 			"image_armedcolor"	"200 80 60 255"
@@ -2941,7 +3400,7 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"TitleLabel"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumSmallBold"
 			"labelText"		"#MMenu_PracticeHighlight_Title"
 			"textAlignment"	"center"
 			"xpos"			"20"
@@ -2998,7 +3457,7 @@
 				"enabled"		"1"
 				"tabPosition"	"0"
 				"labeltext"		"#MMenu_PracticeHighlight_Button"
-				"font"			"HudFontSmallBold"
+				"font"			"HudFontMediumSmallBold"
 				"textAlignment"	"center"
 				"dulltext"		"0"
 				"brighttext"	"0"
@@ -3007,16 +3466,16 @@
 				"sound_released"	"UI/buttonclickrelease.wav"
 				"Command"		"offlinepractice"
 				
-				"border_default"	"MainMenuButtonDefault"
-				"border_armed"		"MainMenuButtonArmed"
+				"border_default"	""
+				"border_armed"		""
 				"paintbackground"	"0"
 				
-				"defaultFgColor_override" "46 43 42 255"
-				"armedFgColor_override" "235 226 202 255"
-				"depressedFgColor_override" "46 43 42 255"
+				"defaultFgColor_override" "255 255 255 255"
+				"armedFgColor_override" "HUDBlue"
+				"depressedFgColor_override" "255 255 255 255"
 				
 				"image_drawcolor"	"117 107 94 255"
-				"image_armedcolor"	"235 226 202 255"
+				"image_armedcolor"	"HUDRed"
 				"SubImage"
 				{
 					"ControlName"	"ImagePanel"
@@ -3048,7 +3507,7 @@
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"labeltext"		""
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumSmallBold"
 			"textAlignment"	"center"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -3059,9 +3518,9 @@
 			
 			"paintbackground"	"0"
 			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"defaultFgColor_override" "255 255 255 255"
+			"armedFgColor_override" "HUDBlue"
+			"depressedFgColor_override" "255 255 255 255"
 			
 			"image_drawcolor"	"117 107 94 255"
 			"image_armedcolor"	"200 80 60 255"
@@ -3111,7 +3570,7 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"TitleLabel"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumSmallBold"
 			"labelText"		"#MMenu_NewUserForumHighlight_Title"
 			"textAlignment"	"north-west"
 			"xpos"			"10"
@@ -3160,7 +3619,7 @@
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"labeltext"		""
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumSmallBold"
 			"textAlignment"	"center"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -3171,9 +3630,9 @@
 			
 			"paintbackground"	"0"
 			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"defaultFgColor_override" "255 255 255 255"
+			"armedFgColor_override" "HUDBlue"
+			"depressedFgColor_override" "255 255 255 255"
 			
 			"image_drawcolor"	"117 107 94 255"
 			"image_armedcolor"	"200 80 60 255"
@@ -3223,7 +3682,7 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"TitleLabel"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumSmallBold"
 			"labelText"		"#MMenu_OptionsHighlightPanel_Title"
 			"textAlignment"	"north-west"
 			"xpos"			"10"
@@ -3272,7 +3731,7 @@
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"labeltext"		""
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumSmallBold"
 			"textAlignment"	"center"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -3283,9 +3742,9 @@
 			
 			"paintbackground"	"0"
 			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"defaultFgColor_override" "255 255 255 255"
+			"armedFgColor_override" "HUDBlue"
+			"depressedFgColor_override" "255 255 255 255"
 			
 			"image_drawcolor"	"117 107 94 255"
 			"image_armedcolor"	"200 80 60 255"
@@ -3335,7 +3794,7 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"TitleLabel"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumSmallBold"
 			"labelText"		"#MMenu_LoadoutHighlightPanel_Title"
 			"textAlignment"	"north-west"
 			"xpos"			"10"
@@ -3384,7 +3843,7 @@
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"labeltext"		""
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumSmallBold"
 			"textAlignment"	"center"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -3395,9 +3854,9 @@
 			
 			"paintbackground"	"0"
 			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"defaultFgColor_override" "255 255 255 255"
+			"armedFgColor_override" "HUDBlue"
+			"depressedFgColor_override" "255 255 255 255"
 			
 			"image_drawcolor"	"117 107 94 255"
 			"image_armedcolor"	"200 80 60 255"
@@ -3447,7 +3906,7 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"TitleLabel"
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumSmallBold"
 			"labelText"		"#MMenu_StoreHighlightPanel_Title"
 			"textAlignment"	"north-west"
 			"xpos"			"10"
@@ -3496,7 +3955,7 @@
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"labeltext"		""
-			"font"			"HudFontSmallBold"
+			"font"			"HudFontMediumSmallBold"
 			"textAlignment"	"center"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -3507,9 +3966,9 @@
 			
 			"paintbackground"	"0"
 			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "46 43 42 255"
+			"defaultFgColor_override" "255 255 255 255"
+			"armedFgColor_override" "HUDBlue"
+			"depressedFgColor_override" "255 255 255 255"
 			
 			"image_drawcolor"	"117 107 94 255"
 			"image_armedcolor"	"200 80 60 255"

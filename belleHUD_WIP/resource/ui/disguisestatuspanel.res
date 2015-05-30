@@ -5,7 +5,7 @@
 		"ControlName"		"CEmbeddedItemModelPanel"
 		"fieldName"		"itemmodelpanel"
 	
-		"xpos"			"0"
+		"xpos"			"10"
 		"ypos"			"0"
 		"zpos"			"1"		
 		"wide"			"100"
@@ -33,14 +33,10 @@
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"DisguiseStatusBG"
 		"xpos"			"10"
-		"xpos_minmode"			"10"
 		"ypos"			"30"
-		"ypos_minmode"			"48"
 		"zpos"			"-1"
-		"wide"			"200"
-		"wide_minmode"			"140"
+		"wide"			"150"
 		"tall"	 		"32"
-		"tall_minmode"	 		"22"
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -53,11 +49,11 @@
 		"teambg_3"		"../hud/color_panel_blu"
 		"teambg_3_lodef"	"../hud/color_panel_blu"
 		
-		"src_corner_height"		"23"				// pixels inside the image
-		"src_corner_width"		"23"
+		"src_corner_height"		"40"				// pixels inside the image
+		"src_corner_width"		"40"
 			
-		"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"5"	
+		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
+		"draw_corner_height" 	"0"	
 	}
 
 	"DisguiseNameLabel"

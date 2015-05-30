@@ -510,7 +510,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"	
-			"fillcolor"		"162 148 135 255"
+			"fillcolor"		"255 255 255 255"
 			"PaintBackgroundType"	"0"
 		}
 		"ClassBar1B"
@@ -531,7 +531,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"	
-			"fillcolor"		"162 148 135 255"
+			"fillcolor"		"255 255 255 255"
 			"PaintBackgroundType"	"0"
 		}	
 		"ClassBarLabel1A"
@@ -659,7 +659,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"	
-			"fillcolor"		"93 60 27 255"
+			"fillcolor"		"245 245 245 255"
 			"PaintBackgroundType"	"0"
 		}	
 		"ClassBar2B"
@@ -680,7 +680,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"	
-			"fillcolor"		"93 60 27 255"
+			"fillcolor"		"245 245 245 255"
 			"PaintBackgroundType"	"0"
 		}	
 		"ClassBarLabel2A"
@@ -808,7 +808,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"	
-			"fillcolor"		"134 93 39 255"
+			"fillcolor"		"235 235 235 255"
 			"PaintBackgroundType"	"0"
 		}	
 		"ClassBar3B"
@@ -829,7 +829,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"	
-			"fillcolor"		"134 93 39 255"
+			"fillcolor"		"235 235 235 255"
 			"PaintBackgroundType"	"0"
 		}	
 		"ClassBarLabel3A"
@@ -957,7 +957,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"	
-			"fillcolor"		"207 147 95 255"
+			"fillcolor"		"225 225 225 255"
 			"PaintBackgroundType"	"0"
 		}	
 		"ClassBar4B"
@@ -978,7 +978,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"	
-			"fillcolor"		"207 147 95 255"
+			"fillcolor"		"225 225 225 255"
 			"PaintBackgroundType"	"0"
 		}	
 		"ClassBarLabel4A"
@@ -1106,7 +1106,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"	
-			"fillcolor"		"226 184 146 255"
+			"fillcolor"		"215 215 215 255"
 			"PaintBackgroundType"	"0"
 		}	
 		"ClassBar5B"
@@ -1127,7 +1127,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"	
-			"fillcolor"		"226 184 146 255"
+			"fillcolor"		"215 215 215 255"
 			"PaintBackgroundType"	"0"
 		}	
 		"ClassBarLabel5A"
@@ -1255,7 +1255,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"	
-			"fillcolor"		"162 148 135 255"
+			"fillcolor"		"205 205 205 255"
 			"PaintBackgroundType"	"0"
 		}	
 		"ClassBar6B"
@@ -1276,7 +1276,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"	
-			"fillcolor"		"162 148 135 255"
+			"fillcolor"		"205 205 205 255"
 			"PaintBackgroundType"	"0"
 		}	
 		"ClassBarLabel6A"
@@ -1404,7 +1404,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"	
-			"fillcolor"		"93 60 27 255"
+			"fillcolor"		"195 195 195 255"
 			"PaintBackgroundType"	"0"
 		}	
 		"ClassBar7B"
@@ -1425,7 +1425,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"	
-			"fillcolor"		"93 60 27 255"
+			"fillcolor"		"195 195 195 255"
 			"PaintBackgroundType"	"0"
 		}	
 		"ClassBarLabel7A"
@@ -1553,7 +1553,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"	
-			"fillcolor"		"134 93 39 255"
+			"fillcolor"		"185 185 185 255"
 			"PaintBackgroundType"	"0"
 		}	
 		"ClassBar8B"
@@ -1574,7 +1574,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"	
-			"fillcolor"		"134 93 39 255"
+			"fillcolor"		"185 185 185 255"
 			"PaintBackgroundType"	"0"
 		}	
 		"ClassBarLabel8A"
@@ -1702,7 +1702,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"	
-			"fillcolor"		"207 147 95 255"
+			"fillcolor"		"175 175 175 255"
 			"PaintBackgroundType"	"0"
 		}	
 		"ClassBar9B"
@@ -1723,50 +1723,8 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"	
-			"fillcolor"		"207 147 95 255"
+			"fillcolor"		"175 175 175 255"
 			"PaintBackgroundType"	"0"
-		}	
-		"ClassBarLabel9A"
-		{
-			"ControlName"		"Label"
-			"fieldName"		"ClassBarLabel9A"
-			"font"			"ScoreboardVerySmall"
-			"labelText"		"%classbarlabel9A%"
-			"textAlignment"		"west"
-			"xpos"			"c-282"
-			"xpos_hidef"			"c-190"
-			"xpos_lodef"			"c-190"
-			"ypos"			"372"
-			"ypos_hidef"			"209"
-			"ypos_lodef"			"209"
-			"zpos"			"6"
-			"wide"			"100"
-			"tall"			"20"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-		}				
-		"ClassBarLabel9B"
-		{
-			"ControlName"		"Label"
-			"fieldName"		"ClassBarLabel9B"
-			"font"			"ScoreboardVerySmall"
-			"labelText"		"%classbarlabel9B%"
-			"textAlignment"		"west"
-			"xpos"			"c-127"
-			"xpos_hidef"			"c-35"
-			"xpos_lodef"			"c-35"
-			"ypos"			"372"
-			"ypos_hidef"			"209"
-			"ypos_lodef"			"209"
-			"zpos"			"6"
-			"wide"			"100"
-			"tall"			"20"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
 		}				
 		"ClassLabel9"
 		{

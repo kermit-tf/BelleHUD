@@ -21,7 +21,7 @@
 	{
 		"ControlName"		"CircularProgressBar"
 		"fieldName"		"TriUber"
-		"xpos"			"23"
+		"xpos"			"r-300"
 		"ypos"			"0"
 		"zpos"			"2"
 		"wide"			"98"
