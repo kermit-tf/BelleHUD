@@ -7,7 +7,7 @@
 		"enabled"		"1"
 		"xpos"			"9999"	[$WIN32] //c105
 		"ypos"			"r57"	[$WIN32]
-		"xpos_minmode"	"68"	[$WIN32]
+		"xpos_minmode"	"9999"	[$WIN32]
 		"ypos_minmode"	"r40"	[$WIN32]
 		"wide"			"100"
 		"tall"			"50"

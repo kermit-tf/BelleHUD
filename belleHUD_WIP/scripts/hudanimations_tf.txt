@@ -204,10 +204,8 @@ event KeyHintMessageHide
 //Health Bonus Pulse
 event HudHealthBonusPulse
 {
-	//Animate	PlayerStatusHealthBonusImage 	Alpha		"255"				Linear 0.0 0.2
-	//Animate	PlayerStatusHealthBonusImage 	Alpha		"0"					Linear 0.2 0.4
-	//Animate   TriThing						fgcolor		"37 119 228 255" 	Linear 0.0 0.2		
-	//Animate   TriThing						fgcolor		"255 255 255 255" 	Linear 0.2 0.2	
+
+	Animate	PlayerStatusHealthBonusImage 		Alpha		"100"				Linear 0.0 0.5
 	Animate PlayerStatusHealthValue				FgColor		"24 116 205 255"	Accel 0.0 0.0
 	Animate PlayerStatusHealthValueSpec			FgColor		"24 116 205 255"	Accel 0.0 0.0
 	Animate PlayerStatusHealthValue				FgColor		"255 255 255 255"	Accel 0.0 0.2

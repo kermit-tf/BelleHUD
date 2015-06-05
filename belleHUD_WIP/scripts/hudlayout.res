@@ -10,12 +10,12 @@
         "zpos" "2"
 
         "xpos" "c-16"
-        "ypos" "c-20"
-        "wide" "32"
+        "ypos" "c-18"
+        "wide" "33"
         "tall" "43"
 
-        "font" "crosshairsoutline16"
-        "labelText" "a"
+        "font" "crosshairsoutline30"
+        "labelText" "t"
         "textAlignment" "center"
 
         "fgcolor" "255 255 255 255"

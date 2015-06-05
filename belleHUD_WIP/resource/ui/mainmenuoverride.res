@@ -577,7 +577,6 @@
 			}
 		}
 	}	
-	
 	"Background"
 	{
 		"ControlName"	"ImagePanel"
@@ -604,6 +603,10 @@
 		{
 			"image"		"../console/background_upward_widescreen"
 		}
+		if_halloween_3
+		{
+			"image"		"../console/background_upward_widescreen"
+		}
 		if_fullmoon
 		{
 			"image"		"../console/background_upward_widescreen"
@@ -612,7 +615,12 @@
 		{
 			"image"		"../console/background_upward_widescreen"
 		}
+		if_eotl_launch
+		{
+			"image"		"../console/background_upward_widescreen"
+		}
 	}
+
 					
 	"TFLogoImage"
 	{
