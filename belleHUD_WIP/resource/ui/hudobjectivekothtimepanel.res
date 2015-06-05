@@ -85,19 +85,32 @@
 			"labelText"		"0:00"
 		}	
 	}
-	
+		"ActiveTimerBGAnchor"
+	{
+		"ControlName" "EditablePanel"
+		"fieldName" "ActiveTimerBGAnchor"
+		"xpos" "-9"
+		"ypos" "2"
+		"wide" "80"
+		"tall" "80"
+		"visible" "1"
+		"enabled" "1"
+	}
 	"ActiveTimerBG"
 	{
-		"ControlName"		"ImagePanel"
-		"fieldName"			"ActiveTimerBG"
-		"xpos"				"9999"
-		"ypos"				"3"
-		"zpos"				"1"
-		"wide"				"70"
-		"tall"				"54"
-		"visible"			"0"
-		"enabled"			"1"
-		"image"				"replay/thumbnails/rotated_triangle"
-		"scaleImage"		"1"
+		"ControlName"			"ImagePanel"
+		"fieldName"				"ActiveTimerBG"
+		"xpos"					"0"
+		"ypos"					"0"
+		"zpos"					"1"
+		"wide"					"73"
+		"tall"					"56"
+		"visible"				"0"
+		"enabled"				"1"
+		"image"					"replay/thumbnails/rotated_triangle"
+		"scaleImage"			"1"
+		"pin_to_sibling"		 "ActiveTimerBGAnchor"
+		"pin_corner_to_sibling" "1"
+		"pin_to_sibling_corner" "1"		
 	}
 }

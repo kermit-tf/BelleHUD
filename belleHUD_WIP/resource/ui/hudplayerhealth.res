@@ -193,13 +193,27 @@
 		"font"			"Liber55"
 		"fgcolor"		"TransparentBlack"
 	}								
+	
+	
+	
+	
+	"PlayerStatusBleedImageAnchor"
+	{
+		"ControlName" "EditablePanel"
+		"fieldName" "PlayerStatusBleedImageAnchor"
+		"xpos" "40"
+		"ypos" "60"
+		"wide" "20"
+		"tall" "20"
+		"visible" "1"
+		"enabled" "1"
+	}
 	"PlayerStatusBleedImage"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusBleedImage"
-		"xpos"			"85"
-		"xpos_minmode"	"70"
-		"ypos"			"60"
+		"xpos"			"0"
+		"ypos"			"0"
 		"zpos"			"7"
 		"wide"			"32"
 		"tall"			"32"
@@ -208,7 +222,25 @@
 		"scaleImage"	"1"	
 		"image"			"../vgui/bleed_drop"
 		"fgcolor"		"TanDark"
+		"pin_to_sibling" "PlayerStatusBleedImageAnchor"
+		"pin_corner_to_sibling" "1"
+		"pin_to_sibling_corner" "1"
 	}		
+	
+	
+	
+	
+	"PlayerStatusMilkImageAnchor"
+	{
+		"ControlName" "EditablePanel"
+		"fieldName" "PlayerStatusMilkImageAnchor"
+		"xpos" "-75"
+		"ypos" "60"
+		"wide" "20"
+		"tall" "20"
+		"visible" "1"
+		"enabled" "1"
+	}
 	"PlayerStatusMilkImage"
 	{
 		"ControlName"	"ImagePanel"
@@ -224,15 +256,30 @@
 		"scaleImage"	"1"	
 		"image"			"../vgui/bleed_drop"
 		"fgcolor"		"TanDark"
+		"pin_to_sibling" "PlayerStatusMilkImageAnchor"
+		"pin_corner_to_sibling" "1"
+		"pin_to_sibling_corner" "1"
+	}
+
+	
+	
+		"PlayerStatusMarkedForDeathImageAnchor"
+	{
+		"ControlName" "EditablePanel"
+		"fieldName" "PlayerStatusMarkedForDeathImageAnchor"
+		"xpos" "-75"
+		"ypos" "60"
+		"wide" "20"
+		"tall" "20"
+		"visible" "1"
+		"enabled" "1"
 	}
 	"PlayerStatusMarkedForDeathImage"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusMarkedForDeathImage"
-		"xpos"			"85"
-		"xpos_minmode"	"70"
-		"ypos"			"60"
-		"zpos"			"7"
+		"xpos"			"0"
+		"ypos"			"0"
 		"wide"			"32"
 		"tall"			"32"
 		"visible"		"1"
@@ -240,14 +287,32 @@
 		"scaleImage"	"1"	
 		"image"			"../vgui/marked_for_death"
 		"fgcolor"		"TanDark"
+		"pin_to_sibling" "PlayerStatusMarkedForDeathImageAnchor"
+		"pin_corner_to_sibling" "1"
+		"pin_to_sibling_corner" "1"
+	}
+	
+	
+	
+	
+	
+	"PlayerStatusMarkedForDeathSilentAnchor"
+	{
+		"ControlName" "EditablePanel"
+		"fieldName" "PlayerStatusMarkedForDeathSilentAnchor"
+		"xpos" "-75"
+		"ypos" "60"
+		"wide" "20"
+		"tall" "20"
+		"visible" "1"
+		"enabled" "1"
 	}
 	"PlayerStatusMarkedForDeathSilentImage"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusMarkedForDeathSilentImage"
-		"xpos"			"85"
-		"xpos_minmode"	"70"
-		"ypos"			"60"
+		"xpos"			"0"
+		"ypos"			"0"
 		"zpos"			"7"
 		"wide"			"31"
 		"tall"			"31"
@@ -256,14 +321,31 @@
 		"scaleImage"	"1"	
 		"image"			"../vgui/marked_for_death"
 		"fgcolor"		"TanDark"
+		"pin_to_sibling" "PlayerStatusMarkedForDeathSilentAnchor"
+		"pin_corner_to_sibling" "1"
+		"pin_to_sibling_corner" "1"
+	}
+	
+	
+	
+	
+	"PlayerStatus_MedicUberBulletResistAnchor"
+	{
+		"ControlName" "EditablePanel"
+		"fieldName" "PlayerStatus_MedicUberBulletResistAnchor"
+		"xpos" "-100"
+		"ypos" "60"
+		"wide" "50"
+		"tall" "50"
+		"visible" "1"
+		"enabled" "1"
 	}
 	"PlayerStatus_MedicUberBulletResistImage"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatus_MedicUberBulletResistImage"
-		"xpos"			"85"
-		"xpos_minmode"	"70"
-		"ypos"			"60"
+		"xpos"			"0"
+		"ypos"			"0"
 		"zpos"			"7"
 		"wide"			"31"
 		"tall"			"31"
@@ -272,14 +354,33 @@
 		"scaleImage"	"1"	
 		"image"			"../HUD/defense_buff_bullet_blue"
 		"fgcolor"		"TanDark"
+		"pin_to_sibling" "PlayerStatus_MedicUberBulletResistAnchor"
+		"pin_corner_to_sibling" "1"
+		"pin_to_sibling_corner" "1"
 	}
+	
+	
+	
+	
+	
+		"PlayerStatus_MedicUberBlastResistAnchor"
+	{
+		"ControlName" "EditablePanel"
+		"fieldName" "PlayerStatus_MedicUberBlastResistAnchor"
+		"xpos" "-100"
+		"ypos" "60"
+		"wide" "50"
+		"tall" "50"
+		"visible" "1"
+		"enabled" "1"
+	}
+	
 	"PlayerStatus_MedicUberBlastResistImage"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatus_MedicUberBlastResistImage"
-		"xpos"			"85"
-		"xpos_minmode"	"70"
-		"ypos"			"60"
+		"xpos"			"0"
+		"ypos"			"0"
 		"zpos"			"7"
 		"wide"			"31"
 		"tall"			"31"
@@ -288,14 +389,31 @@
 		"scaleImage"	"1"	
 		"image"			"../HUD/defense_buff_explosion_blue"
 		"fgcolor"		"TanDark"
+		"pin_to_sibling" "PlayerStatus_MedicUberBlastResistAnchor"
+		"pin_corner_to_sibling" "1"
+		"pin_to_sibling_corner" "1"
+	}
+	
+	
+	
+	
+	"PlayerStatus_MedicUberFireResistAnchor"
+	{
+		"ControlName" "EditablePanel"
+		"fieldName" "PlayerStatus_MedicUberFireResistAnchor"
+		"xpos" "-100"
+		"ypos" "60"
+		"wide" "50"
+		"tall" "50"
+		"visible" "1"
+		"enabled" "1"
 	}
 	"PlayerStatus_MedicUberFireResistImage"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatus_MedicUberFireResistImage"
-		"xpos"			"85"
-		"xpos_minmode"	"70"
-		"ypos"			"60"
+		"xpos"			"0"
+		"ypos"			"0"
 		"zpos"			"7"
 		"wide"			"31"
 		"tall"			"31"
@@ -304,15 +422,31 @@
 		"scaleImage"	"1"	
 		"image"			"../HUD/defense_buff_fire_blue"
 		"fgcolor"		"TanDark"
+		"pin_to_sibling" "PlayerStatus_MedicUberFireResistAnchor"
+		"pin_corner_to_sibling" "1"
+		"pin_to_sibling_corner" "1"
 	}
 
+	
+	
+	
+		"PlayerStatus_MedicSmallBulletResistImageAnchor"
+	{
+		"ControlName" "EditablePanel"
+		"fieldName" "PlayerStatus_MedicSmallBulletResistImageAnchor"
+		"xpos" "-100"
+		"ypos" "60"
+		"wide" "20"
+		"tall" "20"
+		"visible" "1"
+		"enabled" "1"
+	}
 	"PlayerStatus_MedicSmallBulletResistImage"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatus_MedicSmallBulletResistImage"
-		"xpos"			"85"
-		"xpos_minmode"	"70"
-		"ypos"			"60"
+		"xpos"			"0"
+		"ypos"			"0"
 		"zpos"			"7"
 		"wide"			"31"
 		"tall"			"31"
@@ -321,14 +455,34 @@
 		"scaleImage"	"1"	
 		"image"			"../HUD/defense_buff_bullet_blue"
 		"fgcolor"		"TanDark"
+		"pin_to_sibling" "PlayerStatus_MedicSmallBulletResistImageAnchor"
+		"pin_corner_to_sibling" "1"
+		"pin_to_sibling_corner" "1"
 	}
+	
+	
+	
+	
+	
+
+	"PlayerStatus_MedicSmallBlastResistImageAnchor"
+	{
+		"ControlName" "EditablePanel"
+		"fieldName" "PlayerStatus_MedicSmallBlastResistImageAnchor"
+		"xpos" "-100"
+		"ypos" "60"
+		"wide" "20"
+		"tall" "20"
+		"visible" "1"
+		"enabled" "1"
+	}
+	
 	"PlayerStatus_MedicSmallBlastResistImage"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatus_MedicSmallBlastResistImage"
-		"xpos"			"85"
-		"xpos_minmode"	"70"
-		"ypos"			"60"
+		"xpos"			"0"
+		"ypos"			"0"
 		"zpos"			"7"
 		"wide"			"31"
 		"tall"			"31"
@@ -337,14 +491,31 @@
 		"scaleImage"	"1"	
 		"image"			"../HUD/defense_buff_explosion_blue"
 		"fgcolor"		"TanDark"
+		"pin_to_sibling" "PlayerStatus_MedicSmallBlastResistImageAnchor"
+		"pin_corner_to_sibling" "1"
+		"pin_to_sibling_corner" "1"
+	}
+	
+	
+	
+	
+	"PlayerStatus_MedicSmallFireResistImageAnchor"
+	{
+		"ControlName" "EditablePanel"
+		"fieldName" "PlayerStatus_MedicSmallFireResistImageAnchor"
+		"xpos" "-100"
+		"ypos" "60"
+		"wide" "20"
+		"tall" "20"
+		"visible" "1"
+		"enabled" "1"
 	}
 	"PlayerStatus_MedicSmallFireResistImage"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatus_MedicSmallFireResistImage"
-		"xpos"			"85"
-		"xpos_minmode"	"70"
-		"ypos"			"60"
+		"xpos"			"0"
+		"ypos"			"0"
 		"zpos"			"7"
 		"wide"			"31"
 		"tall"			"31"
@@ -353,6 +524,10 @@
 		"scaleImage"	"1"	
 		"image"			"../HUD/defense_buff_fire_blue"
 		"fgcolor"		"TanDark"
+		"pin_to_sibling" "PlayerStatus_MedicSmallFireResistImageAnchor"
+		"pin_corner_to_sibling" "1"
+		"pin_to_sibling_corner" "1"
+		
 	}
 	
 

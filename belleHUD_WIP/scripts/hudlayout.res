@@ -98,7 +98,7 @@
 		"ypos"			"r90"	[$X360]
 		"zpos"			"7"
 		"wide"			"275"
-		"tall"			"100"
+		"tall"			"120"
 	}
 	
 	HudDemomanCharge
