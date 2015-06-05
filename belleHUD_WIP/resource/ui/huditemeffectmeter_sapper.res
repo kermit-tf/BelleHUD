@@ -51,8 +51,7 @@
 		"pinCorner"				"2"
 		"visible"				"1"
 		"visible_minmode"		"1"
-		"ypos_minmode"			"0"
-		"xpos_minmode"			"0"
+
 		"textAlignment_minmode"			"west"
 		"enabled"				"1"
 		"tabPosition"			"0"
@@ -70,8 +69,7 @@
 		"font"					"Default"
 		"xpos"					"47"
 		"ypos"					"23"
-		"ypos_minmode"			"0"
-		"xpos_minmode"			"0"
+
 		"zpos"					"2"
 		"wide"					"30"
 		"wide_minmode"			"50"

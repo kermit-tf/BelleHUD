@@ -65,8 +65,7 @@
 		"font"					"Default"
 		"xpos"					"46"
 		"ypos"					"23"
-		"ypos_minmode"			"0"
-		"xpos_minmode"			"0"
+
 		"zpos"					"2"
 		"wide"					"69"
 		"tall"					"5"				

@@ -21,11 +21,11 @@
 	{
 		"ControlName"		"CircularProgressBar"
 		"fieldName"		"TriUber"
-		"xpos"			"r-300"
+		"xpos"			"23"
 		"ypos"			"0"
-		"zpos"			"2"
-		"wide"			"98"
-		"tall"			"95"
+		"zpos"			"7"
+		"wide"			"99"
+		"tall"			"94"
 		"visible"		"1"
 		"enabled"		"1"
 		"variable"		"charge"
@@ -75,7 +75,7 @@
 		"dulltext"				"0"
 		"brighttext"			"0"
 		"font"					"Liber45"
-		"fgcolor_override"		"0 0 0 255"
+		"fgcolor_override"		"Black"
 	}
 	"IndividualChargesLabel"
 	{
