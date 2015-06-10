@@ -1248,19 +1248,17 @@
 			}
 		}
 		
-				"AssistsLabel"
+		"AssistsLabel"
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"AssistsLabel"
 			"font"			"Liber20"
-			"font"		"Liber12"
+			"font"			"Liber12"
 			"labelText"		"#TF_ScoreBoard_AssistsLabel"
 			"fgcolor"		"HUDWhite"
 			"textAlignment"	"west"
-			"xpos"			"1"		//113
-			"ypos"			"264"
-			"xpos"		"r313"
-			"ypos"		"r158"
+			"xpos"			"c220"		
+			"ypos"			"264"   
 			"zpos"			"3"
 			"wide"			"162"
 			"tall"			"41"
@@ -1279,14 +1277,11 @@
 			"ControlName"	"CExLabel"
 			"fieldName"		"Assists"
 			"font"			"Liber20"
-			"font"		"Liber12"
 			"labelText"		"%assists%"
 			"fgcolor"		"HUDWhite"
 			"textAlignment"	"east"
-			"xpos"			"c-385"
-			"xpos"		"r366"		//-16
+			"xpos"			"c260"
 			"ypos"			"264"
-			"ypos"		"r158"
 			"zpos"			"3"
 			"wide"			"162"
 			"tall"			"41"
@@ -1614,7 +1609,7 @@
 				"wide"		"163"
 			}
 		}
-		"InvulnLabel"
+				"InvulnLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"InvulnLabel"
@@ -1624,9 +1619,7 @@
 			"fgcolor"		"HUDWhite"
 			"textAlignment"		"west"
 			"xpos"			"c220"
-			"xpos"		"r198"
-			"ypos"			"264"
-			"ypos"		"r151"
+			"ypos"			"412"
 			"zpos"			"3"
 			"wide"			"140"
 			"tall"			"41"
@@ -1649,10 +1642,8 @@
 			"labelText"		"%invulns%"
 			"fgcolor"		"HUDWhite"
 			"textAlignment"	"east"
-			"xpos"			"c260"
-			"xpos"		"r251"
-			"ypos"			"264"
-			"ypos"		"r151"
+			"xpos"			"c260" //c260
+			"ypos"			"412"  //412
 			"zpos"			"3"
 			"wide"			"162"
 			"tall"			"41"
@@ -1914,7 +1905,7 @@
 			"visible"			"1"
 			"enabled"			"1"
 		}
-			"DamageLabel"
+		"DamageLabel"
 	{
 			"ControlName" 	"CExLabel"
 			"fieldName" 	"DamageLabel"
@@ -1923,10 +1914,8 @@
 			"labelText" 	"#TF_Scoreboard_Damage"
 			"fgcolor"		"HUDWhite"
 			"textAlignment"		"west"
-			"xpos"			"c220"
-			"xpos"		"r198"
-			"ypos"			"412"
-			"ypos"		"r110"
+			"xpos"			"1" //1
+			"ypos"			"264"  //264
 			"zpos"			"3"
 			"wide"			"162"
 			"tall"			"41"
@@ -1942,10 +1931,8 @@
 			"labelText" 		"%damage%"
 			"fgcolor"			"HUDWhite"
 			"textAlignment"		"east"
-			"xpos"				"c260"
-			"xpos"		"r251"
-			"ypos"				"412"
-			"ypos"		"r110"
+			"xpos"				"c-385" //c-385
+			"ypos"				"264"  //264
 			"zpos"				"3"
 			"wide"				"162"
 			"tall"				"41"

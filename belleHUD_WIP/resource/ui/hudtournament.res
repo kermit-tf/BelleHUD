@@ -569,7 +569,6 @@
 		"src_corner_height"	"23"				// pixels inside the image
 		"src_corner_width"	"23"
 		
-		Liber
 	}
 
 	"CountdownLabel"

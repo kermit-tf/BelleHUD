@@ -201,7 +201,7 @@
 	{
 		"ControlName" "EditablePanel"
 		"fieldName" "PlayerStatusBleedImageAnchor"
-		"xpos" "40"
+		"xpos" "-75"
 		"ypos" "60"
 		"wide" "20"
 		"tall" "20"

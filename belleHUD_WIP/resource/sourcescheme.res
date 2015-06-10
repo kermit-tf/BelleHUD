@@ -7,128 +7,144 @@ Scheme
 	// this is a list of all the colors used by the scheme
 	Colors
 	{
-	    "TFDarkBrown"               "60 56 53 255"
-	    "TFDarkBrownTransparent"    "60 56 53 190"
-	    "TFTanBright"               "140 140 140 150"
+	    "TFDarkBrown"               "56 56 56 255"
+	    "TFDarkBrownTransparent"    "56 56 56 190"
+	    "TFTanBright"               "110 110 110 150"
 	    "TFTanLight"                "255 255 255 150"
-	    "TFTanMedium"               "121 121 121 150"
+	    "TFTanMedium"               "80 80 80 150"
 	    
-	    "TFTanLightBright"          "229 223 211 90"
-	    "TFTanLightDark"            "96 90 78 90"
+	    "TFTanLightBright"          "230 230 230 90"
+	    "TFTanLightDark"            "88 88 88 90"
 	    
-	    "TFOrangeBright"            "156 82 33 255"
+	    "TFOrangeBright"            "65 199 168 255"
 	    
-	    "TFTextBright"              "251 236 203 150"
-	    "TFTextLight"               "201 188 162 255"
-	    "TFTextMedium"              "131 121 104 255"
-	    "TFTextMediumDark"          "104 96 83 255"
+	    "TFTextBright"              "TanLight"
+	    "TFTextLight"               "201 188 162 255" //201 188 162 255
+	    "TFTextMedium"              "131 131 131 255" //131 121 104 255
+	    "TFTextMediumDark"          "96 96 96 255"
 	    "TFTextBlack"               "42 39 37 255"
-	    "TFTextDull"                "131 121 104 255"
+	    "TFTextDull"                "115 115 115 255"
 
-	    "TFMediumBrown"		"69 64 58 255"
+	    "TFMediumBrown"				"TanLight" //should be text like enable gamepad and such on menu
 
 	    "QuickListBGDeselected"		"69 64 58 255"
-	    "QuickListBGSelected"               "131 121 104 150"
+	    "QuickListBGSelected"       "131 131 131 150"
 	    
 	    "Blank"				"0 0 0 0"
 	    
 	    // background colors
 		"ControlBG"			"76 88 68 255"		// background color of controls
-		"ControlDarkBG"		"90 106 80 255"		// darker background color; used for background of scrollbars
-		"WindowBG"			"62 70 55 255"		// background color of text edit panes (chat, text entries, etc.)
-		"SelectionBG"		"90 84 75 255"	// background color of any selected text or menu item
-		"SelectionBG2"		"69 64 57 255"		// selection background in window w/o focus
-		"ListBG"			"39 36 34 255"		// background of server browser, buddy list, etc.
+		"ControlDarkBG"		"80 80 80 255"		// darker background color; used for background of scrollbars
+		"WindowBG"			"62 62 62 255"		// background color of text edit panes (chat, text entries, etc.)
+		"SelectionBG"		"80 80 80 255"		// background color of any selected text or menu item
+		"SelectionBG2"		"80 80 80 255"		// selection background in window w/o focus
+		"ListBG"			"34 34 34 255"		// background of server browser, buddy list, etc.
 	}
 	BaseSettings
 	{
 		// scheme-specific colors
-		Border.Bright					"TFTanLightDark"	// the lit side of a control
-		Border.Dark						"TFTanLightDark"		// the dark/unlit side of a control
+		Border.Bright					"TFTanLightDark"			// the lit side of a control
+		Border.Dark						"TFTanLightDark"			// the dark/unlit side of a control
 		Border.Selection				"BorderSelection"			// the additional border color for displaying the default/selected button
 
-		Button.TextColor				"TFDarkBrown"
-		Button.BgColor					"TFTanLight"
-		Button.ArmedTextColor			"TFDarkBrown"
-		Button.ArmedBgColor				"TFTanBright"
-		Button.DepressedTextColor		"TFDarkBrown"
+		Button.TextColor				"TanLight"
+		Button.BgColor					"80 80 80 255"
+		Button.ArmedTextColor			"65 199 168 255" //buttonn text for use defaults and shit
+		Button.ArmedBgColor				"20 20 20 255"	 //the background for the "use defaults" and shit
+		Button.DepressedTextColor		"65 199 168 255"
 		Button.DepressedBgColor			"TFTanLight"	
 		Button.FocusBorderColor			"TransparentBlack"
 		
-		CheckButton.TextColor			"TFTextBright"
-		CheckButton.SelectedTextColor		"TFTextBright"
-		CheckButton.BgColor				"ListBG"
-		CheckButton.HighlightFgColor		"TFTextMedium"
-		CheckButton.ArmedBgColor		"Blank"
+		CheckButton.TextColor				"TFTextBright"
+		CheckButton.SelectedTextColor		"TanLight"
+		CheckButton.BgColor					"ListBG"
+		CheckButton.HighlightFgColor		"TanLight"
+		CheckButton.ArmedBgColor			"Blank"
 		CheckButton.DepressedBgColor		"Blank"
-		CheckButton.Border1  			"Border.Dark" 		// the left checkbutton border
-		CheckButton.Border2  			"Border.Bright"		// the right checkbutton border
-		CheckButton.Check				"TFTanBright"	// color of the check itself
-		CheckButton.DisabledBgColor	    "ListBG"
+		CheckButton.Border1  				"Border.Dark" 		// the left checkbutton border
+		CheckButton.Border2  				"Border.Bright"		// the right checkbutton border
+		CheckButton.Check					"TanLight"		// color of the check itself
+		CheckButton.DisabledBgColor	   	    "ListBG"
 
-		ToggleButton.SelectedTextColor	"TFTextBright"
+		ToggleButton.SelectedTextColor	"65 199 168 255"
 		
 		ComboBoxButton.ArrowColor		"TFTanLight"
 		ComboBoxButton.ArmedArrowColor	"TFTanBright"
 		ComboBoxButton.BgColor			"Blank"
 		ComboBoxButton.DisabledBgColor	"Blank"
 		
-		RadioButton.TextColor		"TFTextBright"
-		RadioButton.SelectedTextColor	"TFTextBright"
-		RadioButton.ArmedTextColor	"TFTextMedium"
+		RadioButton.TextColor			"TFTextBright"
+		RadioButton.SelectedTextColor	"65 199 168 255"
+		RadioButton.ArmedTextColor		"TanLight" 
 		
-		Frame.BgColor					"TFDarkBrown"
-		Frame.OutOfFocusBgColor			"TFDarkBrownTransparent"
+		Frame.BgColor					"20 20 20 250"
+		Frame.OutOfFocusBgColor			"20 20 20 80"
 		FrameGrip.Color1				"TFTanMedium"
 		FrameGrip.Color2				"TFDarkBrown"
 		FrameTitleButton.FgColor		"TFTanBright"
-		FrameTitleBar.Font			"DefaultLarge"		[$WIN32]
-		FrameTitleBar.TextColor			"TFTanBright"
+		FrameTitleBar.Font				"DefaultLarge"		[$WIN32]
+		FrameTitleBar.TextColor			"TanLight" 
 		FrameTitleBar.DisabledTextColor	"TFTanLight"
 		
 		Label.TextDullColor				"TFTextDull"
 		Label.TextColor					"TFTextBright"
 		Label.TextBrightColor			"TFTextBright"
-		Label.SelectedTextColor			"TFTextBright"
+		Label.SelectedTextColor			"65 199 168 255"
 		Label.BgColor					"Blank"
-		Label.DisabledFgColor1			"TFTextDull"	
+		Label.DisabledFgColor1			"TanLight"
 		Label.DisabledFgColor2			"Blank"	
 		
-		ListPanel.TextColor					"TFTextBright"
-		ListPanel.BgColor					"ListBG"
-		ListPanel.SelectedBgColor			"SelectionBG"
-		ListPanel.SelectedOutOfFocusBgColor	"SelectionBG2"
+		ListPanel.TextColor					"TanLight"
+		ListPanel.SelectedTextColor			"TanLight"
+		ListPanel.BgColor					"30 30 30 255"
+		ListPanel.SelectedBgColor			"60 60 60 255"
+		ListPanel.SelectedOutOfFocusBgColor	"20 20 20 100"
 		
 		MainMenu.TextColor			"TanLight"			[$WIN32]
-		MainMenu.ArmedTextColor		"117 107 94 255"	[$WIN32]
+		MainMenu.ArmedTextColor		"TanLight"	[$WIN32]
 		MainMenu.Inset				"32"
 		
 		Menu.TextInset					"6"
-		Menu.FgColor			"TFTextLight"
-		Menu.BgColor			"ListBG"
-		Menu.ArmedFgColor		"TFTextBright"
-		Menu.ArmedBgColor		"TFOrangeBright"
+		Menu.FgColor			"50 50 50 255"
+		Menu.BgColor			"20 20 20 255"
+		Menu.ArmedFgColor		"50 50 50 255"
+		Menu.ArmedBgColor		"65 199 168 255" 	//this is the drop down background
 		Menu.DividerColor		"BorderDark"
 		
 		ScrollBarButton.FgColor				"TFDarkBrown"
-		ScrollBarButton.BgColor				"TFTanLight"
+		ScrollBarButton.BgColor				"100 100 100 255"
 		ScrollBarButton.ArmedFgColor		"TFDarkBrown"
 		ScrollBarButton.ArmedBgColor		"TFTanBright"
 		ScrollBarButton.DepressedFgColor	"TFDarkBrown"
-		ScrollBarButton.DepressedBgColor	"TFTanLight"
+		ScrollBarButton.DepressedBgColor	"190 190 190 255"
 
 		ScrollBarSlider.BgColor				"TFTanMedium"		// this isn't really used
-		ScrollBarSlider.FgColor				"TFTanLight"		// handle with which the slider is grabbed
+		ScrollBarSlider.FgColor				"190 190 190 255"		// handle with which the slider is grabbed
 		
 		Slider.NobColor				"TFTanLight"		
 		Slider.TextColor			"TFTextBright"
 		Slider.TrackColor			"ListBG"
-		Slider.DisabledTextColor1	"TFTextMediumDark"
+		Slider.DisabledTextColor1	"TanLight" //last tick
         Slider.DisabledTextColor2	"Blank"
 		
-		TextEntry.TextColor			        "TFTextBright"
-		TextEntry.DisabledTextColor	        "TFTextMedium"
-		TextEntry.SelectedBgColor	        "TFOrangeBright"
+		MainMenu.Backdrop				"37 37 37 200"
+		
+		
+		
+		RichText.TextColor								"TanLight"
+		RichText.BgColor								"20 20 20 255"		
+		RichText.SelectedTextColor						"TanLight"
+		RichText.SelectedBgColor						"65 199 168 127" //this is console highlight colour I'm sure
+		SectionedListPanel.SelectedBgColor				"65 199 168 255" //not 100% on this but I think it's when you click on button binds in the menu
+		Tooltip.BgColor									"65 199 168 255" 
+		
+		Console.TextColor								"65 199 168 255"
+		Console.DevTextColor							"150 150 150 255"
+		SectionedListPanel.SelectedBgColor				"65 199 168 255"
+		Tooltip.BgColor									"65 199 168 255"
+		NewGame.SelectionColor							"65 199 168 255"
+		
+		
 	}
 	
 	Fonts
@@ -137,7 +153,7 @@ Scheme
 		{
 			"1"	[$WIN32]
 			{
-				"name"		"Libershock"
+				"name"		"Liber"
 				"tall"		"26"
 				"weight"	"500"
 				"additive"	"0"
@@ -156,7 +172,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Libershock"
+				"name"		"Liber"
 				"tall"		"35"
 				"tall_lodef"	"40"
 				"weight"	"500"
@@ -169,7 +185,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Libershock"
+				"name"		"Liber"
 				"tall"		"14"
 				"weight"	"500"
 			}
@@ -179,7 +195,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Libershock"
+				"name"		"Liber"
 				"tall"		"16"
 				"weight"	"0"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -187,7 +203,7 @@ Scheme
 			}
 			"2"
 			{
-				"name"		"Libershock"
+				"name"		"Liber"
 				"tall"		"16"
 				"weight"	"0"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -195,7 +211,7 @@ Scheme
 			}
 			"3"
 			{
-				"name"		"Libershock"
+				"name"		"Liber"
 				"tall"		"16"
 				"weight"	"0"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -204,7 +220,7 @@ Scheme
 			}
 			"4"
 			{
-				"name"		"Libershock"
+				"name"		"Liber"
 				"tall"		"19"
 				"weight"	"0"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -213,7 +229,7 @@ Scheme
 			}
 			"5"
 			{
-				"name"		"Libershock"
+				"name"		"Liber"
 				"tall"		"19"
 				"weight"	"0"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
@@ -281,8 +297,8 @@ Scheme
 		}
 		"10" 
 		{
-			"font" "resource/Font/Andes.ttf"
-			"name" "Libershock"
+			"font" "resource/Font/Liberation Serif.ttf"
+			"name" "Liber"
 		}
 		
 	}
