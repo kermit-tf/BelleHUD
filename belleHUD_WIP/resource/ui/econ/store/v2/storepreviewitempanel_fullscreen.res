@@ -15,12 +15,12 @@
 		"PaintBackgroundType"	"0"
 		"bgcolor_override" "0 0 0 255"
 		
-		"fullscreen_fade_to_black_duLiberon"	"0.32"
+		"fullscreen_fade_to_black_duration"	"0.32"
 		"fullscreen_modelpanel_origin_x"	"221"
 		"fullscreen_modelpanel_origin_y"	"0"
 		"fullscreen_modelpanel_origin_z"	"-42"
 		"ui_fadeout_time"					"3.0"
-		"ui_fadeout_duLiberon"				"2.0"
+		"ui_fadeout_duration"				"2.0"
 	}
 	
 	// This control fades in if the mouse cursor isn't moving around

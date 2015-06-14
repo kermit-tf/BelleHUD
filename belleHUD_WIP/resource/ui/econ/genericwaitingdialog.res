@@ -57,10 +57,10 @@
 		"bgcolor_override" "0 0 0 0"
 	}
 
-	"DuLiberonLabel"
+	"DurationLabel"
 	{	
 		"ControlName"	"Label"
-		"fieldName"		"DuLiberonLabel"
+		"fieldName"		"DurationLabel"
 		"font"			"HudFontSmallBold"
 		"xpos"			"0"
 		"ypos"			"52"
@@ -71,7 +71,7 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"labelText"		"%duLiberon%"
+		"labelText"		"%duration%"
 		"textAlignment"		"north"
 		"fgcolor_override" "200 80 60 255"
 		"bgcolor_override" "0 0 0 0"

@@ -65,9 +65,8 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"namelabel"
-			"font"			"ItemFontNameLarge"
 			"xpos"			"0"
-			"ypos"			"0"
+			"ypos"			"-10"
 			"zpos"			"2"
 			"wide"			"140"
 			"tall"			"30"
@@ -76,7 +75,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"labelText"		"%itemname%"
-			"textAlignment"	"south"
+			"textAlignment"	"north"
 			"fgcolor"		"235 226 202 255"
 			"centerwrap"	"1"
 		}
@@ -86,7 +85,7 @@
 			"fieldName"		"attriblabel"
 			"font"			"ItemFontAttribLarge"
 			"xpos"			"0"
-			"ypos"			"30"
+			"ypos"			"10"
 			"zpos"			"2"
 			"wide"			"140"
 			"tall"			"60"
@@ -104,7 +103,7 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"equippedlabel"
-			"font"			"ItemFontAttribSmall"
+			"font"			"Liber8"
 			"xpos"			"37"
 			"ypos"			"28"
 			"zpos"			"2"

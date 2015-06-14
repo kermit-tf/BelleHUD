@@ -2,7 +2,7 @@
 //
 //
 // commands:
-//	Animate <panel name> <variable> <target value> <interpolator> <start time> <duDejaon>
+//	Animate <panel name> <variable> <target value> <interpolator> <start time> <duration>
 //		variables:
 //			FgColor
 //			BgColor
