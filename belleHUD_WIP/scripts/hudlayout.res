@@ -991,10 +991,11 @@
 		"fieldName" 	"HudMenuEngyBuild"
 		"visible" 		"1"
 		"enabled" 		"1"
-		"xpos"			"c-225"
-		"ypos"			"c-55"
+		"xpos"			"c-445"
+		"ypos"			"c-120"
+		"zpos"			"5"
 		"wide"			"450"
-		"tall"			"195"
+		"tall"			"600"
 		"PaintBackgroundType"	"0"
 	}
 	
@@ -1003,22 +1004,22 @@
 		"fieldName" 	"HudMenuEngyDestroy"
 		"visible" 		"1"
 		"enabled" 		"1"
-		"xpos"			"c-225"
-		"ypos"			"c-59"
+		"xpos"			"c-445"
+		"ypos"			"c-120"
+		"zpos"			"5"
 		"wide"			"450"
-		"tall"			"200"
+		"tall"			"600"
 		"PaintBackgroundType"	"0"
 	}
-
-	"HudEurekaEffectTeleportMenu"
+		"HudEurekaEffectTeleportMenu"
 	{
 		"fieldName" 	"HudEurekaEffectTeleportMenu"
 		"visible" 		"1"
 		"enabled" 		"1"
-		"xpos"			"c-125"
+		"xpos"			"c-430"
 		"ypos"			"c-55"
 		"wide"			"250"
-		"tall"			"195"
+		"tall"			"250"
 		"PaintBackgroundType"	"0"
 	}
 	

@@ -14,7 +14,21 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 	}
-	
+		"BlackBackground"
+		{
+			"ControlName" "ImagePanel"
+			"fieldName" "BlackBackground"
+			"xpos" "0"
+			"ypos" "0"
+			"zpos" "-10"
+			"wide" "120"
+			"tall" "900"
+			"autoResize" "0"
+			"pinCorner" "0"
+			"visible" "1"
+			"enabled" "1"
+			"fillcolor" "0 0 0 200"
+		}
 	"Background"
 	{
 		"ControlName"	"CIconPanel"
@@ -24,8 +38,8 @@
 		"zpos"			"-1"
 		"wide"			"120"
 		"tall"			"22"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"scaleImage"	"1"	
 		"icon"			"obj_status_background_disabled"
 		"iconColor"		"255 255 255 255"
