@@ -19,7 +19,7 @@
 		"nemesis_width"		"15"	[$WIN32]
 		"class_width"		"15"	[$WIN32]
 		"score_width"		"20"
-		"ping_width"		"15"	[$WIN32]
+		"ping_width"		"18"	[$WIN32]
 		"stats_width"		"15"
 		"killstreak_width"	"10"
 	}
@@ -596,7 +596,7 @@
 		"ypos"			"300"
 		"ypos_minmode"			"230"
 		"zpos"			"20"
-		"wide"			"235"
+		"wide"			"220"
 		"tall"			"120"
 		"tall_minmode"			"192"
 		"visible"		"1"

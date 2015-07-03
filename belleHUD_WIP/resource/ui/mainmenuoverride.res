@@ -2018,13 +2018,13 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"StoreHasNewItemsImage"
-		"xpos"			"c-59"
+		"xpos"			"9999"
 		"ypos"			"245"
 		"zpos"			"13"
 		"wide"			"32"
 		"tall"			"32"
 		"visible"		"0"
-		"enabled"		"1"
+		"enabled"		"0"
 		"image"			"../vgui/new"
 		"scaleImage"	"1"
 	}
