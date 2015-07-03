@@ -4,20 +4,24 @@
 	{
 		"ControlName"		"CTFClientScoreBoardDialog"
 		"fieldName"			"scoreinfo"
-		"xpos"				"0"		//0
+		"xpos"				"0" //cs-0.5
 		"ypos"				"0"
 		"wide"				"f0"
 		"tall"				"480"
 		"visible"			"1"
 		"enabled"			"1"
-		"avatar_width"		"57"
-		"name_width"		"55"
-		"name_width"	"55"
-		"status_width"		"15"
-		"nemesis_width"		"15"
-		"class_width"		"15"
-		"score_width"		"25"
-		"ping_width"		"23"
+		"tabPosition"		"0"
+		"medal_width"		"15"
+		"avatar_width"		"57"	[$WIN32]
+		"name_width"		"55"	[$WIN32]
+		"name_width_short"	"55"	[$WIN32]		
+		"status_width"		"15"	[$WIN32]
+		"nemesis_width"		"15"	[$WIN32]
+		"class_width"		"15"	[$WIN32]
+		"score_width"		"20"
+		"ping_width"		"15"	[$WIN32]
+		"stats_width"		"15"
+		"killstreak_width"	"10"
 	}
 		"ActualMainBG"
 	{
@@ -570,7 +574,7 @@
 		"ypos"			"300"
 		"ypos_minmode"			"230"
 		"zpos"			"20"
-		"wide"			"220"
+		"wide"			"225"
 		"tall"			"120"
 		"tall_minmode"			"192"
 		"visible"		"1"
@@ -592,7 +596,7 @@
 		"ypos"			"300"
 		"ypos_minmode"			"230"
 		"zpos"			"20"
-		"wide"			"220"
+		"wide"			"235"
 		"tall"			"120"
 		"tall_minmode"			"192"
 		"visible"		"1"
@@ -1083,7 +1087,7 @@
 			"ControlName"	"CExLabel"
 			"fieldName"		"Kills"
 			"font"			"Liber40"
-			"fgcolor"		"HUDWhite"
+			"fgcolor_override"		"HUDWhite"
 			"labelText"		"%kills%"
 			"textAlignment"	"east"
 			"xpos"			"65"

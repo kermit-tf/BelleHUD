@@ -21,9 +21,6 @@
 
 	TeamHealthBorder
 	{
-
-		"visible"  "1"
-
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"HealthCrossBorder"
 		"xpos"		"193"
@@ -32,6 +29,7 @@
 		"wide"		"108"
 		"tall"		"101"
 		"enabled"		"1"
+		"visible"  "1"
 		"image"			"replay/thumbnails/redtriangle"
 		"teambg_2"		"replay/thumbnails/redtriangle"
 		"teambg_3"		"replay/thumbnails/bluetriangle"
@@ -125,7 +123,24 @@
 		"enabled"		"1"
 		"image"			"replay/thumbnails/EXTRATESTONRIGHTSIDE"
 		"scaleImage"	"1"	
-	}
+	}		
+	"backgroundtri"
+	{
+		"ControlName"		"CircularProgressBar"
+		"fieldName"		"backgroundtri"
+		"xpos"			"214"
+		"ypos"			"-26"
+		"zpos"			"-5"
+		"wide"			"98"
+		"tall"			"95"
+		"visible"		"1"
+		"enabled"		"1"
+		"fg_image"		"replay/thumbnails/backgroundtriangle"
+		"bg_image"		"replay/thumbnails/backgroundtriangle"
+		"fgcolor_override"	"37 37 37 255"
+		"bgcolor_override"	"255 255 255 255"
+		"scaleImage"		"1"
+	}	
 	"PlayerStatusHealthImageBG"
 	{
 		"ControlName"	"ImagePanel"

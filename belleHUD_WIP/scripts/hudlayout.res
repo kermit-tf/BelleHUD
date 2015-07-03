@@ -5,7 +5,7 @@
         "controlName" "CExLabel"
         "fieldName" "xHair"
         "visible" "0"
-		"visible_minmode" "1"
+		"visible_minmode" "0"
         "enabled" "1"
         "zpos" "2"
 
@@ -14,8 +14,28 @@
         "wide" "33"
         "tall" "43"
 
-        "font" "crosshairsoutline30"
-        "labelText" "t"
+        "font" "crosshairs36"
+        "labelText" "["
+        "textAlignment" "center"
+
+        "fgcolor" "255 255 255 255"
+    }	
+	SeekersxHair
+    {
+        "controlName" "CExLabel"
+        "fieldName" "SeekersxHair"
+        "visible" "0"
+		"visible_minmode" "0"
+        "enabled" "1"
+        "zpos" "2"
+
+        "xpos" "c-18"
+        "ypos" "c-20"
+        "wide" "33"
+        "tall" "41"
+
+        "font" "CrossHairNormal"
+        "labelText" "x"
         "textAlignment" "center"
 
         "fgcolor" "255 255 255 255"
@@ -1384,7 +1404,31 @@
 		"bgcolor_override"	"0 0 0 0"
 		"PaintBackgroundType"	"0" // rounded corners
 	}
+	
+	"CTFStreakNotice"
+	{
+		"fieldName"		"CTFStreakNotice"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"			"640"
+		"tall"			"480"
+		"visible"		"1"
+		"enabled"		"1"
+		"bgcolor_override"	"0 0 0 0"
+		"PaintBackgroundType"	"0" // rounded corners
+	}
 
+	CTFFlagCalloutPanel
+	{
+		"fieldName"		"CTFFlagCalloutPanel"
+		"visible" 		"0"
+		"enabled" 		"1"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"	 		"40"
+		"tall"	 		"40"
+		"priority"		"40"
+	}
 	"HudMenuTauntSelection"
 	{
 		"fieldName" 	"HudMenuTauntSelection"
@@ -1395,5 +1439,50 @@
 		"wide"			"470"
 		"tall"			"200"
 		"PaintBackgroundType"	"0"
+	}
+		"ItemAttributeTracker"
+	{
+		"fieldName" 	"ItemAttributeTracker"
+		"visible" 		"1"
+		"enabled" 		"1"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"			"f5"
+		"tall"			"f0"
+		"PaintBackgroundType"	"0"
+	}
+
+	HudMiniGame
+	{
+		"fieldName" "HudMiniGame"
+		"visible" "1"
+		"enabled" "1"
+		"xpos"	"0"
+		"ypos"	"0"
+		"wide"	"f0"
+		"tall"	"480"
+	}
+
+	"QuestNotificationPanel"
+	{
+		"fieldName"	"QuestNotificationPanel"
+		"visible" "1"
+		"enabled" "1"
+		"xpos"	"0"
+		"ypos"	"0"
+		"wide"	"f0"
+		"tall"	"f0"
+	}
+
+	"QuestLogContainer"
+	{
+		"ControlName"		"EditablePanel"
+		"fieldName" 		"QuestLogContainer"
+		"visible" 		"1"
+		"enabled" 		"1"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"	 		"f0"
+		"tall"	 		"f0"
 	}
 }
