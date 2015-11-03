@@ -4111,7 +4111,7 @@
 		}		
 	}
 
-	"StoreHighlightPanel"
+		"StoreHighlightPanel"
 	{
 		"ControlName"	"CExplanationPopup"
 		"fieldName"		"StoreHighlightPanel"
@@ -4189,7 +4189,7 @@
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"labeltext"		""
-			"font"			"HudFontMediumSmallBold"
+			"font"			"HudFontSmallBold"
 			"textAlignment"	"center"
 			"dulltext"		"0"
 			"brighttext"	"0"
@@ -4200,9 +4200,9 @@
 			
 			"paintbackground"	"0"
 			
-			"defaultFgColor_override" "255 255 255 255"
-			"armedFgColor_override" "65 199 168 255"
-			"depressedFgColor_override" "255 255 255 255"
+			"defaultFgColor_override" "46 43 42 255"
+			"armedFgColor_override" "235 226 202 255"
+			"depressedFgColor_override" "46 43 42 255"
 			
 			"image_drawcolor"	"117 107 94 255"
 			"image_armedcolor"	"200 80 60 255"
@@ -4222,7 +4222,7 @@
 			}				
 		}		
 	}
-	
+
 	"EventPromo"
 	{
 		"ControlName"	"EditablePanel"
@@ -4246,7 +4246,7 @@
 			"wide"					"p0.9"
 			"tall"					"o1"
 			"visible"				"0"
-			"enabled"				"0"
+			"enabled"				"1"
 			"image"					"menu_background_eotl_duck"
 			"scaleImage"			"1"
 			"proportionaltoparent"	"1"
@@ -4315,7 +4315,7 @@
 					"enabled"		"1"
 					"tabPosition"	"0"
 					"use_proportional_insets" "1"
-					"font"			"Liber18"
+					"font"			"HudFontSmallBold"
 					"textAlignment"	"center"
 					"dulltext"		"0"
 					"brighttext"	"0"
@@ -4366,8 +4366,8 @@
 					"visible"		"1"
 					"enabled"		"1"
 					"tabPosition"	"0"
-					"use_proportional_insets" "0"
-					"font"			"Liber18"
+					"use_proportional_insets" "1"
+					"font"			"HudFontSmallBold"
 					"textAlignment"	"center"
 					"dulltext"		"0"
 					"brighttext"	"0"
@@ -4387,8 +4387,8 @@
 					"armedFgColor_override" "235 226 202 255"
 					"depressedFgColor_override" "46 43 42 255"
 			
-					"image_drawcolor"	"117 107 94 0"
-					"image_armedcolor"	"235 226 202 0"
+					"image_drawcolor"	"117 107 94 255"
+					"image_armedcolor"	"235 226 202 255"
 				}
 			}
 
@@ -4412,37 +4412,22 @@
 				{
 					"0"
 					{
-						"item"		"Unused Invasion Pass"
-
-						"wide"		"f0"
-						"tall"		"f0"
-						"proportionaltoparent"	"1"
+						"item"		"Halloween 2015 Key"
 						"show_market"	"0"
 					}
 					"1"
 					{
-						"item"		"Invasion Key"
-
-						"wide"		"f0"
-						"tall"		"f0"
-						"proportionaltoparent"	"1"
-						"show_market"	"0"
+						"item"		"Halloween 2015 case"
 					}
 					"2"
 					{
-						"item"		"Invasion Case 01"
-
-						"wide"		"f0"
-						"tall"		"f0"
-						"proportionaltoparent"	"1"
+						"item"		"Taunt: Zoomin' Broom"
+						"show_market"	"0"
 					}
 					"3"
 					{
-						"item"		"Invasion Case 02"
-
-						"wide"		"f0"
-						"tall"		"f0"
-						"proportionaltoparent"	"1"
+						"item"		"Taunt: Soldier's Requiem"
+						"show_market"	"0"
 					}
 				}
 			}
@@ -4459,7 +4444,7 @@
 			"wide"					"80"
 			"tall"					"o1"
 			"visible"				"0"
-			"enabled"				"0"
+			"enabled"				"1"
 			"image"					"new_large"
 			"scaleImage"			"1"
 			"proportionaltoparent"	"1"
