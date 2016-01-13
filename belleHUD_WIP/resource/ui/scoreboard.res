@@ -13,6 +13,7 @@
 		"tabPosition"		"0"
 		"medal_width"		"15"
 		"avatar_width"		"57"	[$WIN32]
+		"spacer"			"5"
 		"name_width"		"55"	[$WIN32]
 		"name_width_short"	"55"	[$WIN32]		
 		"status_width"		"15"	[$WIN32]
@@ -22,6 +23,8 @@
 		"ping_width"		"18"	[$WIN32]
 		"stats_width"		"15"
 		"killstreak_width"	"10"
+		"killstreak_image_width" "10"
+		"stats_width"       "30"
 	}
 		"ActualMainBG"
 	{
@@ -1082,10 +1085,10 @@
 				"visible"		"1"
 			}
 		}
-		"Kills"
+		"Killst"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Kills"
+			"fieldName"		"Killst"
 			"font"			"Liber40"
 			"fgcolor_override"		"HUDWhite"
 			"labelText"		"%kills%"
@@ -1169,10 +1172,10 @@
 				"visible"		"1"
 			}
 		}
-		"Deaths"
+		"Deathst"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Deaths"
+			"fieldName"		"Deathst"
 			"font"			"Liber40"
 			"fgcolor"		"HUDWhite"
 			"labelText"		"%deaths%"
@@ -1226,30 +1229,6 @@
 			}
 		}
 		
-			"GameType"
-		{
-			"ControlName"	"CExLabel"
-			"fieldName"		"gametype"
-			"font"		"Liber10"
-			"labelText"		"%gametype%"
-			"textAlignment"	"center"
-			"xpos"		"c6"
-			"ypos"		"r150"
-			"zpos"		"3"
-			"wide"		"89"
-			"wide"	"0"
-			"tall"		"20"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"0"
-			"enabled"		"0"
-			"fgcolor"		"255 255 255 255"
-
-			if_mvm
-			{
-				
-			}
-		}
 		
 		"AssistsLabel"
 		{
@@ -1275,10 +1254,10 @@
 				"ypos"		"r172"
 			}
 		}
-		"Assists"
+		"Assistst"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Assists"
+			"fieldName"		"Assistst"
 			"font"			"Liber20"
 			"labelText"		"%assists%"
 			"fgcolor"		"HUDWhite"
@@ -1303,7 +1282,7 @@
 			"ControlName"		"CExLabel"
 			"fieldName"		"CapturesLabel"
 			"font"			"Liber20"
-			"font"		"Liber12"
+			
 			"labelText"		"#TF_ScoreBoard_CapturesLabel"
 			"fgcolor"			"HUDWhite"
 			"textAlignment"	"west"
@@ -1324,12 +1303,12 @@
 				"ypos"		"r162"
 			}
 		}
-		"Captures"
+		"Capturest"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Captures"
+			"fieldName"		"Capturest"
 			"font"			"Liber20"
-			"font"		"Liber12"
+			"font"			"Liber12"
 			"labelText"		"%captures%"
 			"fgcolor"		"HUDWhite"
 			"textAlignment"	"east"
@@ -1356,7 +1335,7 @@
 			"ControlName"		"CExLabel"
 			"fieldName"		"DefensesLabel"
 			"font"			"Liber20"
-			"font"		"Liber12"
+			
 			"labelText"		"#TF_ScoreBoard_DefensesLabel"
 			"fgcolor"		"HUDWhite"
 			"textAlignment"	"west"
@@ -1377,12 +1356,12 @@
 				"ypos"		"r152"
 			}
 		}
-		"Defenses"
+		"Defensest"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Defenses"
+			"fieldName"		"Defensest"
 			"font"			"Liber20"
-			"font"		"Liber12"
+			
 			"labelText"		"%defenses%"
 			"fgcolor"		"HUDWhite"
 			"textAlignment"	"east"
@@ -1408,7 +1387,7 @@
 			"ControlName"	"CExLabel"
 			"fieldName"		"DominationLabel"
 			"font"			"Liber20"
-			"font"		"Liber12"
+			
 			"labelText"		"#TF_ScoreBoard_DominationLabel"
 			"fgcolor"		"HUDWhite"
 			"textAlignment"	"west"
@@ -1429,12 +1408,12 @@
 				"ypos"		"r142"
 			}
 		}
-		"Domination"
+		"Dominationt"
 		{
 			"ControlName"		"CExLabel"
-			"fieldName"		"Domination"
+			"fieldName"		"Dominationt"
 			"font"			"Liber20"
-			"font"		"Liber12"
+			
 			"labelText"		"%dominations%"
 			"fgcolor"		"HUDWhite"
 			"textAlignment"		"east"
@@ -1460,7 +1439,7 @@
 			"ControlName"	"CExLabel"
 			"fieldName"		"RevengeLabel"
 			"font"			"Liber20"
-			"font"		"Liber12"
+			
 			"labelText"		"#TF_ScoreBoard_RevengeLabel"
 			"fgcolor"		"HUDWhite"
 			"textAlignment"	"west"
@@ -1481,12 +1460,12 @@
 				"ypos"		"r132"
 			}
 		}
-		"Revenge"
+		"Revenget"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Revenge"
+			"fieldName"		"Revenget"
 			"font"			"Liber20"
-			"font"		"Liber12"
+			
 			"labelText"		"%Revenge%"
 			"fgcolor"		"HUDWhite"
 			"textAlignment"	"east"
@@ -1512,7 +1491,7 @@
 			"ControlName"		"CExLabel"
 			"fieldName"		"DestructionLabel"
 			"font"			"Liber20"
-			"font"		"Liber12"
+			
 			"labelText"		"#TF_ScoreBoard_DestructionLabel"
 			"fgcolor"		"HUDWhite"
 			"textAlignment"	"west"
@@ -1533,12 +1512,12 @@
 				"ypos"		"r122"
 			}
 		}
-		"Destruction"
+		"Destructiont"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Destruction"
+			"fieldName"		"Destructiont"
 			"font"			"Liber20"
-			"font"		"Liber12"
+			
 			"labelText"		"%destruction%"
 			"fgcolor"		"HUDWhite"
 			"textAlignment"	"east"
@@ -1564,7 +1543,7 @@
 			"ControlName"		"CExLabel"
 			"fieldName"		"HealingLabel"
 			"font"			"Liber20"
-			"font"		"Liber12"
+			
 			"labelText"		"#TF_ScoreBoard_HealingLabel"
 			"fgcolor"		"HUDWhite"
 			"textAlignment"	"west"
@@ -1585,12 +1564,12 @@
 				"ypos"		"r172"
 			}
 		}		
-		"Healing"
+		"Healingt"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Healing"
+			"fieldName"		"Healingt"
 			"font"			"Liber20"
-			"font"		"Liber12"
+			
 			"labelText"		"%healing%"
 			"fgcolor"		"HUDWhite"
 			"textAlignment"	"east"
@@ -1617,7 +1596,7 @@
 			"ControlName"	"CExLabel"
 			"fieldName"		"InvulnLabel"
 			"font"			"Liber20"
-			"font"		"Liber12"
+			
 			"labelText"		"#TF_ScoreBoard_InvulnLabel"
 			"fgcolor"		"HUDWhite"
 			"textAlignment"		"west"
@@ -1636,12 +1615,12 @@
 				"ypos"		"r162"
 			}
 		}
-		"Invuln"
+		"Invulnt"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Invuln"
+			"fieldName"		"Invulnt"
 			"font"			"Liber20"
-			"font"		"Liber12"
+			
 			"labelText"		"%invulns%"
 			"fgcolor"		"HUDWhite"
 			"textAlignment"	"east"
@@ -1666,7 +1645,7 @@
 			"ControlName"	"CExLabel"
 			"fieldName"		"HeadshotsLabel"
 			"font"			"Liber20"
-			"font"		"Liber12"
+			
 			"labelText"		"#TF_ScoreBoard_HeadshotsLabel"
 			"fgcolor"		"HUDWhite"
 			"textAlignment"		"west"
@@ -1687,12 +1666,12 @@
 				"ypos"		"r152"
 			}
 		}
-		"Headshots"
+		"Headshotst"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Headshots"
+			"fieldName"		"Headshotst"
 			"font"			"Liber20"
-			"font"		"Liber12"
+			
 			"labelText"		"%headshots%"
 			"fgcolor"		"HUDWhite"
 			"textAlignment"	"east"
@@ -1719,7 +1698,7 @@
 			"ControlName"	"CExLabel"
 			"fieldName"		"BackstabsLabel"
 			"font"			"Liber20"
-			"font"		"Liber12"
+			
 			"labelText"		"#TF_ScoreBoard_BackstabsLabel"
 			"fgcolor"		"HUDWhite"
 			"textAlignment"		"west"
@@ -1740,12 +1719,12 @@
 				"ypos"		"r142"
 			}
 		}
-		"Backstabs"
+		"Backstabst"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Backstabs"
+			"fieldName"		"Backstabst"
 			"font"			"Liber20"
-			"font"		"Liber12"
+			
 			"labelText"		"%backstabs%"
 			"fgcolor"		"HUDWhite"
 			"textAlignment"	"east"
@@ -1792,12 +1771,12 @@
 				"ypos"		"r132"
 			}
 		}
-		"Teleports"
+		"Teleportst"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Teleports"
+			"fieldName"		"Teleportst"
 			"font"			"Liber20"
-			"font"		"Liber12"
+			
 			"labelText"		"%teleports%"
 			"fgcolor"		"HUDWhite"
 			"textAlignment"	"east"
@@ -1824,7 +1803,7 @@
 			"ControlName"	"CExLabel"
 			"fieldName"		"BonusLabel"
 			"font"			"Liber20"
-			"font"		"Liber12"
+			
 			"labelText"		"#TF_ScoreBoard_BonusLabel"
 			"fgcolor"		"HUDWhite"
 			"textAlignment"		"west"
@@ -1845,12 +1824,12 @@
 				"ypos"		"r122"
 			}
 		}
-		"Bonus"
+		"Bonust"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"Bonus"
+			"fieldName"		"Bonust"
 			"font"			"Liber20"
-			"font"		"Liber12"
+			
 			"labelText"		"%bonus%"
 			"fgcolor"		"HUDWhite"
 			"textAlignment"	"east"
@@ -1890,10 +1869,10 @@
 			"visible"		"1"
 			"enabled"		"1"
 		}
-			"Support"
+			"Supportt"
 		{
 			"ControlName" 		"CExLabel"
-			"fieldName" 		"Support"
+			"fieldName" 		"Supportt"
 			"font" 				"Liber20"
 			"labelText" 		"%support%"
 			"fgcolor"			"HUDWhite"
@@ -1913,7 +1892,6 @@
 			"ControlName" 	"CExLabel"
 			"fieldName" 	"DamageLabel"
 			"font" 			"Liber20"
-			"font" 			"Liber12"
 			"labelText" 	"#TF_Scoreboard_Damage"
 			"fgcolor"		"HUDWhite"
 			"textAlignment"		"west"
@@ -1925,10 +1903,10 @@
 			"visible"		"1"
 			"enabled"		"1"
 	}
-			"Damage"
+			"Damaget"
 	{
 			"ControlName" 		"CExLabel"
-			"fieldName" 		"Damage"
+			"fieldName" 		"Damaget"
 			"font" 				"Liber20"
 			"font" 				"Liber12"
 			"labelText" 		"%damage%"
